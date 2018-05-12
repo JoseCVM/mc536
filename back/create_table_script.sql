@@ -42,7 +42,7 @@ CREATE TABLE staff_selecao
     cargo varchar(30),
     PRIMARY KEY (id_pessoa, codigo_pais_empregador),
     FOREIGN KEY (id_pessoa) REFERENCES pessoa(id_pessoa),
-    FOREIGN KEY (codigo_pais_empregador) REFERENCES Selecao(codigo_pais)
+    FOREIGN KEY (codigo_pais_empregador) REFERENCES selecao(codigo_pais)
 );
 
 CREATE TABLE guia
@@ -51,7 +51,7 @@ CREATE TABLE guia
     codigo_pais_guiado varchar(5),
     PRIMARY KEY (id_pessoa),
     FOREIGN KEY (id_pessoa) REFERENCES pessoa(id_pessoa),
-    FOREIGN KEY (codigo_pais_guiado) REFERENCES Selecao(codigo_pais)
+    FOREIGN KEY (codigo_pais_guiado) REFERENCES selecao(codigo_pais)
 );
 
 CREATE TABLE tradutor
@@ -60,7 +60,7 @@ CREATE TABLE tradutor
     codigo_pais_traduz varchar(5),
     PRIMARY KEY (id_pessoa),
     FOREIGN KEY (id_pessoa) REFERENCES pessoa(id_pessoa),
-    FOREIGN KEY (codigo_pais_traduz) REFERENCES Selecao(codigo_pais)
+    FOREIGN KEY (codigo_pais_traduz) REFERENCES selecao(codigo_pais)
 );
 
 CREATE TABLE juiz
@@ -79,7 +79,7 @@ CREATE TABLE tecnico
     descricao varchar(255),
     PRIMARY KEY (id_pessoa, codigo_pais_treina),
     FOREIGN KEY (id_pessoa) REFERENCES pessoa(id_pessoa),
-    FOREIGN KEY (codigo_pais_treina) REFERENCES Selecao(codigo_pais)
+    FOREIGN KEY (codigo_pais_treina) REFERENCES selecao(codigo_pais)
 );
 
 CREATE TABLE jogador
@@ -93,7 +93,7 @@ CREATE TABLE jogador
     numero_camisa int,
     PRIMARY KEY (id_pessoa, codigo_pais_joga),
     FOREIGN KEY (id_pessoa) REFERENCES pessoa(id_pessoa),
-    FOREIGN KEY (codigo_pais_joga) REFERENCES Selecao(codigo_pais)
+    FOREIGN KEY (codigo_pais_joga) REFERENCES selecao(codigo_pais)
 );
 
 CREATE TABLE idioma
