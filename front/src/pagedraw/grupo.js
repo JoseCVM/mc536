@@ -6,7 +6,7 @@ import './grupo.css';
 function render() {
     return <div className="grupo-grupo-2">
         <div className="grupo-0">
-            <div className="grupo-grupo-5">GRUPO A</div>
+            <div className="grupo-grupo-5">GRUPO X</div>
         </div>
         <div className="grupo-1">
             <div className="grupo-divisor_2" /> 

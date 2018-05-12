@@ -12,9 +12,11 @@ function render() {
             </div>
         </div>
         <div className="tela_principal-1">
+            <div className="tela_principal-1-0" /> 
             <div className="tela_principal-grupo_instance-6">
                 <Grupo numero={""} /> 
             </div>
+            <div className="tela_principal-1-2" /> 
         </div>
         <div className="tela_principal-2" /> 
     </div>;
