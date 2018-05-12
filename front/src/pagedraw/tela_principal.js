@@ -14,7 +14,7 @@ function render() {
         <div className="tela_principal-1">
             <div className="tela_principal-1-0" /> 
             <div className="tela_principal-grupo_instance-6">
-                <Grupo numero={""} /> 
+                <Grupo numero_grupo={"A"} /> 
             </div>
             <div className="tela_principal-1-2" /> 
         </div>
