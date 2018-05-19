@@ -4,6 +4,7 @@
     flex-direction: column;
     flex-grow: 1;
     background: #FFFFFF;
+    min-height: 100vh;
 }
 
 .tela_principal-0 {
@@ -40,26 +41,61 @@
 }
 
 .tela_principal-2 {
-    display: flex;
-    margin-top: 7px;
-    padding-left: 499px;
-    padding-right: 181px;
-}
-
-.tela_principal-grupo_instance-1 {
-    display: flex;
-    flex-direction: column;
-    padding-top: 23px;
-    padding-bottom: 23px;
-    background: #D8D8D8;
-    flex-shrink: 0;
-    padding-left: 43px;
-    padding-right: 43px;
+    width: 0px;
+    flex-grow: 0.01631321370309951;
+    flex-basis: 0px;
 }
 
 .tela_principal-3 {
-    width: 0px;
+    display: flex;
+    flex-grow: 0.47797716150081565;
+    flex-basis: 0px;
+    min-height: fit-content;
+    padding-left: 364px;
+}
+
+.tela_principal-3-0 {
+    display: flex;
+    flex-direction: column;
+    margin-top: -15px;
+}
+
+.tela_principal-rectangle_2 {
+    display: flex;
+    flex-direction: column;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    border-radius: 15px;
+    background: rgba(64, 86, 217, 0.3);
+    margin-top: 15px;
     flex-grow: 1;
+}
+
+.tela_principal-3-0-0-0-0 {
+    display: flex;
+    flex-grow: 1;
+    flex-basis: 0px;
+    min-height: fit-content;
+    padding-left: 19px;
+    padding-right: 16px;
+}
+
+.tela_principal-grupo_instance-7 {
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    min-width: 604px;
+}
+
+.tela_principal-3-1 {
+    height: 0px;
+    flex-grow: 1;
+    flex-basis: 0px;
+}
+
+.tela_principal-4 {
+    width: 0px;
+    flex-grow: 0.5057096247960848;
     flex-basis: 0px;
 }
 
