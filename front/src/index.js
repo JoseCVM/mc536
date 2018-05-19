@@ -16,7 +16,7 @@ class App extends Component {
   	// A partir dai so roda coisas do pagedraw. Tudo que temos que fazer eh modificar 
   	// no pagedraw e adicionar mais parametros aqui depois para a tela principal.
     return (
-	    <TelaPrincipal text={this.state.name}/>
+	    <TelaPrincipal text={this.state.name} listaGrupos={this.state.listaGrupos}/>
     );
   }
 
@@ -24,8 +24,109 @@ class App extends Component {
 	super();
 	// Comeca o state.name como vazio, mas diz que ele existe para atualizarmos depois.
     this.state = {
-      name: ""
+      name: "",
+      listaGrupos: [ {
+      	numeroGrupo: "1",
+      	selecoes: [{
+      		nome: "Brasil",
+      		pontos: "4",
+      		jogos: "3",
+      		vitorias:"1",
+      		empates: "1",
+      		derrotas: "1",
+      		golsPro: "5",
+      		golsContra: "6",
+      		saldo: "-1",
+      		porcentagem: "33"
+      	},
+      	{ nome: "Alemanha", pontos: "3", jogos: "3", vitorias:"0", empates: "3", 
+        derrotas: "0", golsPro: "2", golsContra: "2", saldo: "0", porcentagem: "0" },
+      	{ nome: "Alemanha", pontos: "3", jogos: "3", vitorias:"0", empates: "3", 
+        derrotas: "0", golsPro: "2", golsContra: "2", saldo: "0", porcentagem: "0" },
+      	{ nome: "Alemanha", pontos: "3", jogos: "3", vitorias:"0", empates: "3", 
+        derrotas: "0", golsPro: "2", golsContra: "2", saldo: "0", porcentagem: "0" }
+      	]
+      },
+      {	numeroGrupo: "2", selecoes: [
+        { nome: "Alemanha", pontos: "3", jogos: "3", vitorias:"0", empates: "3", 
+        derrotas: "0", golsPro: "2", golsContra: "2", saldo: "0", porcentagem: "0" },
+        { nome: "Alemanha", pontos: "3", jogos: "3", vitorias:"0", empates: "3", 
+        derrotas: "0", golsPro: "2", golsContra: "2", saldo: "0", porcentagem: "0" },
+        { nome: "Alemanha", pontos: "3", jogos: "3", vitorias:"0", empates: "3", 
+        derrotas: "0", golsPro: "2", golsContra: "2", saldo: "0", porcentagem: "0" },
+        { nome: "Alemanha", pontos: "3", jogos: "3", vitorias:"0", empates: "3", 
+        derrotas: "0", golsPro: "2", golsContra: "2", saldo: "0", porcentagem: "0" }
+		] 
+      },
+      {	numeroGrupo: "3", selecoes: [
+        { nome: "Alemanha", pontos: "3", jogos: "3", vitorias:"0", empates: "3", 
+        derrotas: "0", golsPro: "2", golsContra: "2", saldo: "0", porcentagem: "0" },
+        { nome: "Alemanha", pontos: "3", jogos: "3", vitorias:"0", empates: "3", 
+        derrotas: "0", golsPro: "2", golsContra: "2", saldo: "0", porcentagem: "0" },
+        { nome: "Alemanha", pontos: "3", jogos: "3", vitorias:"0", empates: "3", 
+        derrotas: "0", golsPro: "2", golsContra: "2", saldo: "0", porcentagem: "0" },
+        { nome: "Alemanha", pontos: "3", jogos: "3", vitorias:"0", empates: "3", 
+        derrotas: "0", golsPro: "2", golsContra: "2", saldo: "0", porcentagem: "0" }
+		] 
+      },
+      {	numeroGrupo: "4", selecoes: [
+        { nome: "Alemanha", pontos: "3", jogos: "3", vitorias:"0", empates: "3", 
+        derrotas: "0", golsPro: "2", golsContra: "2", saldo: "0", porcentagem: "0" },
+        { nome: "Alemanha", pontos: "3", jogos: "3", vitorias:"0", empates: "3", 
+        derrotas: "0", golsPro: "2", golsContra: "2", saldo: "0", porcentagem: "0" },
+        { nome: "Alemanha", pontos: "3", jogos: "3", vitorias:"0", empates: "3", 
+        derrotas: "0", golsPro: "2", golsContra: "2", saldo: "0", porcentagem: "0" },
+        { nome: "Alemanha", pontos: "3", jogos: "3", vitorias:"0", empates: "3", 
+        derrotas: "0", golsPro: "2", golsContra: "2", saldo: "0", porcentagem: "0" }
+		] 
+      },
+      {	numeroGrupo: "5", selecoes: [
+        { nome: "Alemanha", pontos: "3", jogos: "3", vitorias:"0", empates: "3", 
+        derrotas: "0", golsPro: "2", golsContra: "2", saldo: "0", porcentagem: "0" },
+        { nome: "Alemanha", pontos: "3", jogos: "3", vitorias:"0", empates: "3", 
+        derrotas: "0", golsPro: "2", golsContra: "2", saldo: "0", porcentagem: "0" },
+        { nome: "Alemanha", pontos: "3", jogos: "3", vitorias:"0", empates: "3", 
+        derrotas: "0", golsPro: "2", golsContra: "2", saldo: "0", porcentagem: "0" },
+        { nome: "Alemanha", pontos: "3", jogos: "3", vitorias:"0", empates: "3", 
+        derrotas: "0", golsPro: "2", golsContra: "2", saldo: "0", porcentagem: "0" }
+		] 
+      },
+      {	numeroGrupo: "6", selecoes: [
+        { nome: "Alemanha", pontos: "3", jogos: "3", vitorias:"0", empates: "3", 
+        derrotas: "0", golsPro: "2", golsContra: "2", saldo: "0", porcentagem: "0" },
+        { nome: "Alemanha", pontos: "3", jogos: "3", vitorias:"0", empates: "3", 
+        derrotas: "0", golsPro: "2", golsContra: "2", saldo: "0", porcentagem: "0" },
+        { nome: "Alemanha", pontos: "3", jogos: "3", vitorias:"0", empates: "3", 
+        derrotas: "0", golsPro: "2", golsContra: "2", saldo: "0", porcentagem: "0" },
+        { nome: "Alemanha", pontos: "3", jogos: "3", vitorias:"0", empates: "3", 
+        derrotas: "0", golsPro: "2", golsContra: "2", saldo: "0", porcentagem: "0" }
+		] 
+      },
+      {	numeroGrupo: "7", selecoes: [
+        { nome: "Alemanha", pontos: "3", jogos: "3", vitorias:"0", empates: "3", 
+        derrotas: "0", golsPro: "2", golsContra: "2", saldo: "0", porcentagem: "0" },
+        { nome: "Alemanha", pontos: "3", jogos: "3", vitorias:"0", empates: "3", 
+        derrotas: "0", golsPro: "2", golsContra: "2", saldo: "0", porcentagem: "0" },
+        { nome: "Alemanha", pontos: "3", jogos: "3", vitorias:"0", empates: "3", 
+        derrotas: "0", golsPro: "2", golsContra: "2", saldo: "0", porcentagem: "0" },
+        { nome: "Alemanha", pontos: "3", jogos: "3", vitorias:"0", empates: "3", 
+        derrotas: "0", golsPro: "2", golsContra: "2", saldo: "0", porcentagem: "0" }
+		] 
+      },
+      {	numeroGrupo: "8", selecoes: [
+        { nome: "Alemanha", pontos: "3", jogos: "3", vitorias:"0", empates: "3", 
+        derrotas: "0", golsPro: "2", golsContra: "2", saldo: "0", porcentagem: "0" },
+        { nome: "Alemanha", pontos: "3", jogos: "3", vitorias:"0", empates: "3", 
+        derrotas: "0", golsPro: "2", golsContra: "2", saldo: "0", porcentagem: "0" },
+        { nome: "Alemanha", pontos: "3", jogos: "3", vitorias:"0", empates: "3", 
+        derrotas: "0", golsPro: "2", golsContra: "2", saldo: "0", porcentagem: "0" },
+        { nome: "Alemanha", pontos: "3", jogos: "3", vitorias:"0", empates: "3", 
+        derrotas: "0", golsPro: "2", golsContra: "2", saldo: "0", porcentagem: "0" }
+		] 
+      },
+      ]
     };
+    console.log(this.state);
   }
 
   componentDidMount() {
