@@ -12,13 +12,26 @@ function render() {
             </div>
         </div>
         <div className="tela_principal-1">
-            <div className="tela_principal-1-0" /> 
-            <div className="tela_principal-grupo_instance-6">
-                <Grupo numero={""} /> 
+            <div className="tela_principal-text_2">
+                { this.props.text }
             </div>
-            <div className="tela_principal-1-2" /> 
         </div>
         <div className="tela_principal-2" /> 
+        <div className="tela_principal-3">
+            <div className="tela_principal-3-0">
+                { this.props.listaGrupos.map((elem, i) => {
+                    return <div key={i} className="tela_principal-rectangle_2">
+                        <div className="tela_principal-3-0-0-0-0">
+                            <div className="tela_principal-grupo_instance-7">
+                                <Grupo numeroGrupo={elem.numeroGrupo} selecoes={elem.selecoes} /> 
+                            </div>
+                        </div>
+                    </div>;
+                }) }
+            </div>
+            <div className="tela_principal-3-1" /> 
+        </div>
+        <div className="tela_principal-4" /> 
     </div>;
 };
 
