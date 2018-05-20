@@ -1,7 +1,7 @@
 Antes de executar: npm install
 
 Para executar faça: node server.js
-ou npm start na pasta /back
+OU npm start na pasta /back
 
 
 Fluxo para adicionar um novo endpoint (exemplificando com Pessoa):
@@ -13,8 +13,10 @@ que executa a query do BD;
 em pessoaDAO, e retorna o json de resultado ou uma mensagem de erro;
 
 - No arquivo router.js:
-incluir o controller pessoa: var pessoa = require('./pessoa')
+incluir o controller pessoa: var pessoa = require('./pessoa');
 dentro do método defineRoutes, incluir a rota para a execução do seu novo método:
 app.get('/pessoa', pessoa.get);
 
-Exemplo de endpoint com parâmetro: /partida/:idJogador/fezGol
+Exemplo de endpoint sem parâmetro: /pessoa
+Exemplo de endpoint com parâmetro: /partida/:idJogador/fezGol (PathParam: idJogador)
+
