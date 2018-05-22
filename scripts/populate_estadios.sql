@@ -1,0 +1,12 @@
+INSERT INTO estadio (id_estadio, id_cidade, nome, capacidade) VALUES (1, 1, 'Luzhniki Stadium', 69174);
+INSERT INTO estadio (id_estadio, id_cidade, nome, capacidade) VALUES (2, 2, 'Ekaterinburg Arena', 58542);
+INSERT INTO estadio (id_estadio, id_cidade, nome, capacidade) VALUES (3, 3, 'Saint Petersburg Stadium', 58697);
+INSERT INTO estadio (id_estadio, id_cidade, nome, capacidade) VALUES (4, 4, 'Fisht Stadium', 61188);
+INSERT INTO estadio (id_estadio, id_cidade, nome, capacidade) VALUES (5, 5, 'Kazan Arena', 59911);
+INSERT INTO estadio (id_estadio, id_cidade, nome, capacidade) VALUES (6, 1, 'Spartak Stadium', 67125);
+INSERT INTO estadio (id_estadio, id_cidade, nome, capacidade) VALUES (7, 6, 'Mordovia Arena', 59394);
+INSERT INTO estadio (id_estadio, id_cidade, nome, capacidade) VALUES (8, 7, 'Kaliningrad Stadium', 68009);
+INSERT INTO estadio (id_estadio, id_cidade, nome, capacidade) VALUES (9, 8, 'Samara Arena', 56825);
+INSERT INTO estadio (id_estadio, id_cidade, nome, capacidade) VALUES (10, 9, 'Rostov Arena', 51942);
+INSERT INTO estadio (id_estadio, id_cidade, nome, capacidade) VALUES (11, 10, 'Nizhny Novgorod Stadium', 61105);
+INSERT INTO estadio (id_estadio, id_cidade, nome, capacidade) VALUES (12, 11, 'Volgograd Arena', 52506);

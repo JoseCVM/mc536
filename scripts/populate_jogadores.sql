@@ -269,7 +269,7 @@ INSERT INTO jogador (id_pessoa,codigo_pais_joga,nome_conhecido,posicao,clube_ori
 INSERT INTO jogador (id_pessoa,codigo_pais_joga,nome_conhecido,posicao,clube_origem,numero_camisa) VALUES (269,'CRO','Mario Mandzukic','City','Lateral',17);
 INSERT INTO jogador (id_pessoa,codigo_pais_joga,nome_conhecido,posicao,clube_origem,numero_camisa) VALUES (270,'CRO','Ivan Perisic','City','Volante',18 );
 INSERT INTO jogador (id_pessoa,codigo_pais_joga,nome_conhecido,posicao,clube_origem,numero_camisa) VALUES (271,'NIG','Ikechukwu Ezenwa','Porto','Zagueiro',1);
-INSERT INTO jogador (id_pejogadorssoa,codigo_pais_joga,nome_conhecido,posicao,clube_origem,numero_camisa) VALUES (272,'NIG','Elderson Echiejilé','Celtic','Atacante',2 );
+INSERT INTO jogador (id_pessoa,codigo_pais_joga,nome_conhecido,posicao,clube_origem,numero_camisa) VALUES (272,'NIG','Elderson Echiejilé','Celtic','Atacante',2 );
 INSERT INTO jogador (id_pessoa,codigo_pais_joga,nome_conhecido,posicao,clube_origem,numero_camisa) VALUES (273,'NIG','Shehu Abdullahi','Brugge','Meio-campo',3);
 INSERT INTO jogador (id_pessoa,codigo_pais_joga,nome_conhecido,posicao,clube_origem,numero_camisa) VALUES (274,'NIG','William Troost-Ekong','Celtic','Lateral',4);
 INSERT INTO jogador (id_pessoa,codigo_pais_joga,nome_conhecido,posicao,clube_origem,numero_camisa) VALUES (275,'NIG','Leon Balogun','Paris','Goleiro',5 );

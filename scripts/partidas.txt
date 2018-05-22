@@ -1,0 +1,560 @@
+20180614
+1
+Luzhniki Stadium
+Moscow
+RUS
+Russia
+12:00:00
+SAU
+Saudi Arabia
+20180615
+1
+Ekaterinburg Arena
+Ekaterinburg
+EGY
+Egypt
+09:00:00
+URY
+Uruguay
+20180615
+2
+Saint Petersburg Stadium
+St. Petersburg
+MAR
+Morocco
+12:00:00
+IRN
+IR Iran
+20180615
+2
+Fisht Stadium
+Sochi
+POR
+Portugal
+15:00:00
+ESP
+Spain
+20180616
+8
+Kazan Arena
+Kazan
+FRA
+France
+07:00:00
+AUS
+Australia
+20180616
+4
+Spartak Stadium
+Moscow
+ARG
+Argentina
+10:00:00
+ISL
+Iceland
+20180616
+3
+Mordovia Arena
+Saransk
+PER
+Peru
+13:00:00
+DEN
+Denmark
+20180616
+4
+Kaliningrad Stadium
+Kaliningrad
+CRO
+Croatia
+16:00:00
+NIG
+Nigeria
+20180617
+5
+Samara Arena
+Samara
+CRI
+Costa Rica
+09:00:00
+SRB
+Serbia
+20180617
+6
+Luzhniki Stadium
+Moscow
+GER
+Germany
+12:00:00
+MEX
+Mexico
+20180617
+5
+Rostov Arena
+Rostov
+BRA
+Brazil
+15:00:00
+SWI
+Switzerland
+20180618
+6
+Nizhny Novgorod Stadium
+Nizhny Novgorod
+SWE
+Sweden
+09:00:00
+KOR
+Korea Republic
+20180618
+7
+Fisht Stadium
+Sochi
+BEL
+Belgium
+12:00:00
+PAN
+Panama
+20180618
+7
+Volgograd Arena
+Volgograd
+TUN
+Tunisia
+15:00:00
+ENG
+England
+20180619
+8
+Mordovia Arena
+Saransk
+COL
+Colombia
+09:00:00
+JPN
+Japan
+20180619
+8
+Spartak Stadium
+Moscow
+POL
+Poland
+12:00:00
+SEN
+Senegal
+20180619
+1
+Saint Petersburg Stadium
+St. Petersburg
+RUS
+Russia
+15:00:00
+EGY
+Egypt
+20180620
+2
+Luzhniki Stadium
+Moscow
+POR
+Portugal
+09:00:00
+MAR
+Morocco
+20180620
+1
+Rostov Arena
+Rostov
+URY
+Uruguay
+12:00:00
+SAU
+Saudi Arabia
+20180620
+2
+Kazan Arena
+Kazan
+IRN
+IR Iran
+15:00:00
+ESP
+Spain
+20180621
+3
+Samara Arena
+Samara
+DEN
+Denmark
+09:00:00
+AUS
+Australia
+20180621
+3
+Ekaterinburg Arena
+Ekaterinburg
+FRA
+France
+12:00:00
+PER
+Peru
+20180621
+4
+Nizhny Novgorod Stadium
+Nizhny Novgorod
+ARG
+Argentina
+15:00:00
+CRO
+Croatia
+20180622
+5
+Saint Petersburg Stadium
+St. Petersburg
+BRA
+Brazil
+09:00:00
+CRI
+Costa Rica
+20180622
+4
+Volgograd Arena
+Volgograd
+NIG
+Nigeria
+12:00:00
+ISL
+Iceland
+20180622
+5
+Kaliningrad Stadium
+Kaliningrad
+SRB
+Serbia
+15:00:00
+SWI
+Switzerland
+20180623
+7
+Spartak Stadium
+Moscow
+BEL
+Belgium
+09:00:00
+TUN
+Tunisia
+20180623
+6
+Rostov Arena
+Rostov
+KOR
+Korea Republic
+12:00:00
+MEX
+Mexico
+20180623
+6
+Fisht Stadium
+Sochi
+GER
+Germany
+15:00:00
+SWE
+Sweden
+20180624
+7
+Nizhny Novgorod Stadium
+Nizhny Novgorod
+ENG
+England
+09:00:00
+PAN
+Panama
+20180624
+8
+Ekaterinburg Arena
+Ekaterinburg
+JPN
+Japan
+12:00:00
+SEN
+Senegal
+20180624
+8
+Kazan Arena
+Kazan
+POL
+Poland
+15:00:00
+COL
+Colombia
+20180625
+1
+Samara Arena
+Samara
+URY
+Uruguay
+11:00:00
+RUS
+Russia
+20180625
+1
+Volgograd Arena
+Volgograd
+SAU
+Saudi Arabia
+11:00:00
+EGY
+Egypt
+20180625
+2
+Kaliningrad Stadium
+Kaliningrad
+ESP
+Spain
+15:00:00
+MAR
+Morocco
+20180625
+2
+Mordovia Arena
+Saransk
+IRN
+IR Iran
+15:00:00
+POR
+Portugal
+20180626
+3
+Fisht Stadium
+Sochi
+AUS
+Australia
+11:00:00
+PER
+Peru
+20180626
+3
+Luzhniki Stadium
+Moscow
+DEN
+Denmark
+11:00:00
+FRA
+France
+20180626
+4
+Saint Petersburg Stadium
+St. Petersburg
+NIG
+Nigeria
+15:00:00
+ARG
+Argentina
+20180626
+4
+Rostov Arena
+Rostov
+ISL
+Iceland
+15:00:00
+CRO
+Croatia
+20180627
+6
+Kazan Arena
+Kazan
+KOR
+Korea Republic
+11:00:00
+GER
+Germany
+20180627
+6
+Ekaterinburg Arena
+Ekaterinburg
+MEX
+Mexico
+11:00:00
+SWE
+Sweden
+20180627
+5
+Spartak Stadium
+Moscow
+SRB
+Serbia
+15:00:00
+BRA
+Brazil
+20180627
+5
+Nizhny Novgorod Stadium
+Nizhny Novgorod
+SWI
+Switzerland
+15:00:00
+CRI
+Costa Rica
+20180628
+8
+Volgograd Arena
+Volgograd
+JPN
+Japan
+11:00:00
+POL
+Poland
+20180628
+8
+Samara Arena
+Samara
+SEN
+Senegal
+11:00:00
+COL
+Colombia
+20180628
+7
+Mordovia Arena
+Saransk
+PAN
+Panama
+15:00:00
+TUN
+Tunisia
+20180628
+7
+Kaliningrad Stadium
+Kaliningrad
+ENG
+England
+15:00:00
+BEL
+Belgium
+20180630
+Kazan Arena
+Kazan
+1C
+1C
+11:00:00
+2D
+2D
+20180630
+Fisht Stadium
+Sochi
+1A
+1A
+15:00:00
+2B
+2B
+20180701
+Luzhniki Stadium
+Moscow
+1B
+1B
+11:00:00
+2A
+2A
+20180701
+Nizhny Novgorod Stadium
+Nizhny Novgorod
+1D
+1D
+15:00:00
+2C
+2C
+20180702
+Samara Arena
+Samara
+1E
+1E
+11:00:00
+2F
+2F
+20180702
+Rostov Arena
+Rostov
+1G
+1G
+15:00:00
+2H
+2H
+20180703
+Saint Petersburg Stadium
+St. Petersburg
+1F
+1F
+11:00:00
+2E
+2E
+20180703
+Spartak Stadium
+Moscow
+1H
+1H
+15:00:00
+2G
+2G
+20180706
+Nizhny Novgorod Stadium
+Nizhny Novgorod
+W49
+W49
+11:00:00
+W50
+W50
+20180706
+Kazan Arena
+Kazan
+W53
+W53
+15:00:00
+W54
+W54
+20180707
+Samara Arena
+Samara
+W55
+W55
+11:00:00
+W56
+W56
+20180707
+Fisht Stadium
+Sochi
+W51
+W51
+15:00:00
+W52
+W52
+20180710
+Saint Petersburg Stadium
+St. Petersburg
+W57
+W57
+15:00:00
+W58
+W58
+20180711
+Luzhniki Stadium
+Moscow
+W59
+W59
+15:00:00
+W60
+W60
+20180714
+Saint Petersburg Stadium
+St. Petersburg
+L61
+L61
+11:00:00
+L62
+L62
+20180715
+Luzhniki Stadium
+Moscow
+W61
+W61
+12:00:00
+W62
+W62

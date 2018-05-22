@@ -1,0 +1,11 @@
+INSERT INTO cidade (id_cidade, nome, estado) VALUES (1,'Moscow','Moscow');
+INSERT INTO cidade (id_cidade, nome, estado) VALUES (2,'Ekaterinburg','Ekaterinburg');
+INSERT INTO cidade (id_cidade, nome, estado) VALUES (3,'St. Petersburg','St. Petersburg');
+INSERT INTO cidade (id_cidade, nome, estado) VALUES (4,'Sochi','Sochi');
+INSERT INTO cidade (id_cidade, nome, estado) VALUES (5,'Kazan','Kazan');
+INSERT INTO cidade (id_cidade, nome, estado) VALUES (6,'Saransk','Saransk');
+INSERT INTO cidade (id_cidade, nome, estado) VALUES (7,'Kaliningrad','Kaliningrad');
+INSERT INTO cidade (id_cidade, nome, estado) VALUES (8,'Samara','Samara');
+INSERT INTO cidade (id_cidade, nome, estado) VALUES (9,'Rostov','Rostov');
+INSERT INTO cidade (id_cidade, nome, estado) VALUES (10,'Nizhny Novgorod','Nizhny Novgorod');
+INSERT INTO cidade (id_cidade, nome, estado) VALUES (11,'Volgograd','Volgograd');
