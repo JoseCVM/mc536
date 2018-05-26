@@ -23,3 +23,10 @@ UPDATE selecao SET bandeira = '/images/bandeiras/MEX.gif' WHERE codigo_pais = 'M
 UPDATE selecao SET bandeira = '/images/bandeiras/SWE.gif' WHERE codigo_pais = 'SWE';
 UPDATE selecao SET bandeira = '/images/bandeiras/KOR.gif' WHERE codigo_pais = 'KOR';
 UPDATE selecao SET bandeira = '/images/bandeiras/BEL.gif' WHERE codigo_pais = 'BEL';
+UPDATE selecao SET bandeira = '/images/bandeiras/PAN.gif' WHERE codigo_pais = 'PAN';
+UPDATE selecao SET bandeira = '/images/bandeiras/TUN.gif' WHERE codigo_pais = 'TUN';
+UPDATE selecao SET bandeira = '/images/bandeiras/ENG.gif' WHERE codigo_pais = 'ENG';
+UPDATE selecao SET bandeira = '/images/bandeiras/POL.gif' WHERE codigo_pais = 'POL';
+UPDATE selecao SET bandeira = '/images/bandeiras/SEN.gif' WHERE codigo_pais = 'SEN';
+UPDATE selecao SET bandeira = '/images/bandeiras/COL.gif' WHERE codigo_pais = 'COL';
+UPDATE selecao SET bandeira = '/images/bandeiras/JPN.gif' WHERE codigo_pais = 'JPN';
