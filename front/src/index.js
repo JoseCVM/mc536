@@ -18,7 +18,7 @@ class App extends Component {
   	// A partir dai so roda coisas do pagedraw. Tudo que temos que fazer eh modificar 
   	// no pagedraw e adicionar mais parametros aqui depois para a tela principal.
     return (
-	    <TelaPrincipal text={this.state.name} listaGrupos={this.state.listaGrupos} logo={this.state.logo}/>
+	    <TelaPrincipal listaGrupos={this.state.listaGrupos} logo={this.state.logo}/>
     );
   }
 
@@ -26,8 +26,7 @@ class App extends Component {
 	super();
 	// Comeca o state.name como vazio, mas diz que ele existe para atualizarmos depois.
     this.state = {
-      logo: "http://www.stickpng.com/assets/images/58430032a6515b1e0ad75b3f.png",
-      name: "",
+      logo: "/images/logo.png",
       listaGrupos: [ {
       	numeroGrupo: "1",
       	selecoes: [{
@@ -138,11 +137,7 @@ class App extends Component {
   	// Não é certo fazer coisas que demoram tipo fetch no construtor.
   	// Não pode modificar this.state diretamente.
   	// Usamos o setState para modificar o this.state com o resultado da chamada de API.
-      fetch("http://localhost:8081/pessoa")
-        .then(response => response.json())
-        .then(response => this.setState({ name: response[0].nome }));
-
-      fetch("http://localhost:8081/grupos")
+      fetch("http://3b744fbf.ngrok.io/grupos")
         .then(response => response.json())
         .then(response => this.setState({ listaGrupos: response }));
   }

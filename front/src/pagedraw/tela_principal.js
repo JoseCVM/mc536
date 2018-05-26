@@ -8,25 +8,36 @@ import './tela_principal.css';
 function render() {
     return <div className="tela_principal-tela_principal-3">
         <div className="tela_principal-0">
-            <div className="tela_principal-menu_instance-5">
-                <Menu img_src={this.props.logo} /> 
+            <div className="tela_principal-rectangle_9">
+                <div className="tela_principal-0-0-0">
+                    <div className="tela_principal-menu_instance-5">
+                        <Menu img_src={this.props.logo} /> 
+                    </div>
+                </div>
+                <div className="tela_principal-0-0-1" /> 
             </div>
         </div>
         <div className="tela_principal-1">
-            <div className="tela_principal-1-0">
-                { this.props.listaGrupos.map((elem, i) => {
-                    return <div key={i} className="tela_principal-rectangle_2">
+            <div className="tela_principal-rectangle_1">
+                <div className="tela_principal-1-0-0">
+                    <div className="tela_principal-1-0-0-0">
                         <div className="tela_principal-1-0-0-0-0">
-                            <div className="tela_principal-grupo_instance-7">
-                                <Grupo numeroGrupo={elem.numeroGrupo} selecoes={elem.selecoes} /> 
-                            </div>
+                            { this.props.listaGrupos.map((elem, i) => {
+                                return <div key={i} className="tela_principal-rectangle_2">
+                                    <div className="tela_principal-1-0-0-0-0-0-0-0">
+                                        <div className="tela_principal-grupo_instance-7">
+                                            <Grupo numeroGrupo={elem.numeroGrupo} selecoes={elem.selecoes} /> 
+                                        </div>
+                                    </div>
+                                </div>;
+                            }) }
                         </div>
-                    </div>;
-                }) }
+                        <div className="tela_principal-1-0-0-0-1" /> 
+                    </div>
+                    <div className="tela_principal-1-0-0-1" /> 
+                </div>
             </div>
-            <div className="tela_principal-1-1" /> 
         </div>
-        <div className="tela_principal-2" /> 
     </div>;
 };
 

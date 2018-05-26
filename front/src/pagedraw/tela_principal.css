@@ -9,6 +9,22 @@
 
 .tela_principal-0 {
     display: flex;
+    flex-grow: 0.12109375;
+    flex-basis: 0px;
+    min-height: fit-content;
+}
+
+.tela_principal-rectangle_9 {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    flex-basis: 0px;
+    min-height: fit-content;
+    background: rgba(216, 216, 216, 0);
+}
+
+.tela_principal-0-0-0 {
+    display: flex;
 }
 
 .tela_principal-menu_instance-5 {
@@ -18,16 +34,46 @@
     flex-direction: column;
 }
 
+.tela_principal-0-0-1 {
+    width: 0px;
+    flex-grow: 1;
+    flex-basis: 0px;
+}
+
 .tela_principal-1 {
     display: flex;
-    flex-grow: 0.4859038142620232;
+    flex-grow: 0.87890625;
     flex-basis: 0px;
     min-height: fit-content;
-    margin-top: 72px;
+}
+
+.tela_principal-rectangle_1 {
+    flex-grow: 1;
+    flex-basis: 0px;
+    overflow: scroll;
+    position: relative;
+    background: rgba(216, 216, 216, 0);
+}
+
+.tela_principal-1-0-0 {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    padding-top: 74px;
+    position: absolute;
+    width: 100%;
+    min-height: 100%;
+}
+
+.tela_principal-1-0-0-0 {
+    display: flex;
+    flex-grow: 1;
+    flex-basis: 0px;
+    min-height: fit-content;
     padding-left: 364px;
 }
 
-.tela_principal-1-0 {
+.tela_principal-1-0-0-0-0 {
     display: flex;
     flex-direction: column;
     margin-top: -15px;
@@ -38,13 +84,13 @@
     flex-direction: column;
     padding-top: 18px;
     padding-bottom: 18px;
-    border-radius: 15px;
-    background: rgba(64, 86, 217, 0.3);
+    box-shadow: 0px 2px 4px 0px rgb(209, 209, 209);
+    background: rgba(255, 255, 255, 0.3);
     margin-top: 15px;
     flex-grow: 1;
 }
 
-.tela_principal-1-0-0-0-0 {
+.tela_principal-1-0-0-0-0-0-0-0 {
     display: flex;
     flex-grow: 1;
     flex-basis: 0px;
@@ -60,15 +106,15 @@
     min-width: 604px;
 }
 
-.tela_principal-1-1 {
+.tela_principal-1-0-0-0-1 {
     height: 0px;
     flex-grow: 1;
     flex-basis: 0px;
 }
 
-.tela_principal-2 {
+.tela_principal-1-0-0-1 {
     width: 0px;
-    flex-grow: 0.5140961857379768;
+    flex-grow: 0;
     flex-basis: 0px;
 }
 
