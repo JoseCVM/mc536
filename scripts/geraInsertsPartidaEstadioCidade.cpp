@@ -75,7 +75,7 @@ int main(void)
 			fprintf(festadios, "INSERT INTO estadio (id_estadio, id_cidade, nome, capacidade) VALUES (%d, %d,'%s', %d);\n", estadio[est].first, cidade[cid], est, pick(50000, 70000));
 		}
 
-		fprintf(fpartidas, "INSERT INTO participacao (id_partida, data, horario, fase, id_estadio) VALUES (%d, '%s', '%s', '%s', %d);\n", id_partida, data, hora, "ELIMINACAO", estadio[est].first);
+		fprintf(fpartidas, "INSERT INTO partida (id_partida, data, horario, fase, id_estadio) VALUES (%d, '%s', '%s', '%s', %d);\n", id_partida, data, hora, "ELIMINACAO", estadio[est].first);
 
 		id_partida++;
 	}
