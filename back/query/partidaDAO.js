@@ -3,9 +3,12 @@ var db = require('../db')
 
 var todasAsPartidas =
 "select t1.id_partida as idPartida, t1.numero_grupo as numeroGrupo, t1.nome_estadio as estadio, \
-t1.nome_cidade as cidadePartida, DATE_FORMAT(t1.data, '%d/%m/%Y') as dataPartida, t1.horario as horaPartida, \
-t1.nome_pais as nomeSelecao1, t1.codigo_pais as codigoSelecao1, t1.gols as golsSelecao1, t1.bandeira as bandeiraSelecao1, \
-t2.nome_pais as nomeSelecao2, t2.codigo_pais as codigoSelecao2, t2.gols as golsSelecao2, t2.bandeira as bandeiraSelecao2 from \
+t1.nome_cidade as cidadePartida, DATE_FORMAT(t1.data, '%d/%m/%Y') as dataPartida, \
+TIME_FORMAT(t1.horario, '%H:%i') as horaPartida, \
+t1.nome_pais as nomeSelecao1, t1.codigo_pais as codigoSelecao1, \
+t1.gols as golsSelecao1, t1.bandeira as bandeiraSelecao1, \
+t2.nome_pais as nomeSelecao2, t2.codigo_pais as codigoSelecao2, \
+t2.gols as golsSelecao2, t2.bandeira as bandeiraSelecao2 from \
 (\
   select part.id_partida, e.nome as nome_estadio, c.nome as nome_cidade, p.numero_grupo, p.data, \
   p.horario, s.nome_pais, part.codigo_pais, count(j.id_pessoa) as gols, s.bandeira from \
