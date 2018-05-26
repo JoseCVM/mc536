@@ -49,7 +49,7 @@ string makeQuery(string queryStart,string queryEnd,initializer_list<string> camp
 	return query;
 }
 int main(){
-	srand (time(NULL));
+	srand(32045);
 	string nomeSaida = "populate_pessoa_jogadores.sql";
 	ofstream arqSaida;
 	vector<string> nomes = fileToStringVector("nomes.txt");
