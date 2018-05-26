@@ -1,0 +1,5 @@
+Codigos do ID:
+Jogador: número de até 3 digitos
+Juiz: 10 + número de até 3 digitos
+Técnico: 11 + número de até 2 digitos
+Staff: 12 + número de até 3 digitos
