@@ -10,12 +10,15 @@ var get = function (req, res) {
   	{
   		if (dadosSelecoes[result[i].codigo_pais1] === undefined)
   		{
-  			dadosSelecoes[result[i].codigo_pais1] = {grupo: 0, gols: 0, golsContra: 0, vitorias: 0, derrotas: 0, empates: 0};
+  			dadosSelecoes[result[i].codigo_pais1] = {grupo: 0, nome: "", gols: 0, golsContra: 0, vitorias: 0, derrotas: 0, empates: 0};
   		}
   		if (dadosSelecoes[result[i].codigo_pais2] === undefined)
   		{
-  			dadosSelecoes[result[i].codigo_pais2] = {grupo: 0, gols: 0, golsContra: 0, vitorias: 0, derrotas: 0, empates: 0};
+  			dadosSelecoes[result[i].codigo_pais2] = {grupo: 0, nome: "", gols: 0, golsContra: 0, vitorias: 0, derrotas: 0, empates: 0};
   		}
+
+  		dadosSelecoes[result[i].codigo_pais1].nome = result[i].nome_pais1;
+  		dadosSelecoes[result[i].codigo_pais2].nome = result[i].nome_pais2;
 
   		dadosSelecoes[result[i].codigo_pais1].grupo = result[i].numero_grupo;
   		dadosSelecoes[result[i].codigo_pais2].grupo = result[i].numero_grupo;
@@ -52,7 +55,7 @@ var get = function (req, res) {
   		console.log(dadosSelecoes[x]);
   		tabelaGrupos[dadosSelecoes[x].grupo - 1].numeroGrupo = String.fromCharCode(64 + dadosSelecoes[x].grupo);
   		tabelaGrupos[dadosSelecoes[x].grupo - 1].selecoes.push({
-      		nome: x,
+      		nome: dadosSelecoes[x].nome,
       		pontos: 3 * dadosSelecoes[x].vitorias + dadosSelecoes[x].empates,
       		jogos: dadosSelecoes[x].vitorias + dadosSelecoes[x].empates + dadosSelecoes[x].derrotas,
       		vitorias: dadosSelecoes[x].vitorias,

@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import { render } from 'react-dom';
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import { Switch } from 'react-router'
 
 import './index.css';
 // Step 1: import the design from above
@@ -16,7 +18,7 @@ class App extends Component {
   	// A partir dai so roda coisas do pagedraw. Tudo que temos que fazer eh modificar 
   	// no pagedraw e adicionar mais parametros aqui depois para a tela principal.
     return (
-	    <TelaPrincipal text={this.state.name} listaGrupos={this.state.listaGrupos}/>
+	    <TelaPrincipal text={this.state.name} listaGrupos={this.state.listaGrupos} logo={this.state.logo}/>
     );
   }
 
@@ -24,6 +26,7 @@ class App extends Component {
 	super();
 	// Comeca o state.name como vazio, mas diz que ele existe para atualizarmos depois.
     this.state = {
+      logo: "http://www.stickpng.com/assets/images/58430032a6515b1e0ad75b3f.png",
       name: "",
       listaGrupos: [ {
       	numeroGrupo: "1",
@@ -146,4 +149,12 @@ class App extends Component {
 }
 
 // No inicio da vida, renderizamos esse cara
-render(<App />, document.getElementById('root'));
+//render(<App />, document.getElementById('root'));
+
+render((
+<Router>
+  <Switch>
+      <Route path="/grupos" component={App} />
+      <Route path="/partidas" component={TelaPrincipal} />
+  </Switch>
+</Router>    ), document.getElementById('root'));

@@ -15,6 +15,9 @@
 .menu-0-0 {
     display: flex;
     flex-direction: column;
+    flex-grow: 0.0876068376068376;
+    flex-basis: 0px;
+    min-height: fit-content;
     padding-bottom: 3px;
 }
 
@@ -23,12 +26,11 @@
 }
 
 .menu-logo-0 {
-    width: 82px;
     height: 87px;
-    flex-shrink: 0;
-    background-image: url('https://ucarecdn.com/3df6f2a1-cdd0-4f1a-95d5-9199f7237b7a/');
-    background-size: 100% 100%;
-    background-attachment: fixed;
+    flex-grow: 1;
+    flex-basis: 0px;
+    border-width: 0px;
+    width: 0px;
 }
 
 .menu-bot_o_menu_instance-8 {
@@ -62,7 +64,7 @@
 
 .menu-0-5 {
     height: 0px;
-    flex-grow: 1;
+    flex-grow: 0.9123931623931624;
     flex-basis: 0px;
 }
 

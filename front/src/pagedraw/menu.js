@@ -9,7 +9,7 @@ function render() {
         <div className="menu-0">
             <div className="menu-0-0">
                 <div className="menu-0-0-0">
-                    <div className="menu-logo-0" /> 
+                    <img src={this.props.img_src} className="menu-logo-0" /> 
                 </div>
             </div>
             <div className="menu-bot_o_menu_instance-8">

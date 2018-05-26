@@ -9,7 +9,7 @@ function render() {
     return <div className="tela_principal-tela_principal-3">
         <div className="tela_principal-0">
             <div className="tela_principal-menu_instance-5">
-                <Menu /> 
+                <Menu img_src={this.props.logo} /> 
             </div>
         </div>
         <div className="tela_principal-1">
