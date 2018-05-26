@@ -55,7 +55,7 @@
     width: 128px;
     height: 72px;
     flex-shrink: 0;
-    background: #D8D8D8;
+    border-width: 0px;
 }
 
 .selecoes-0-2 {
@@ -150,11 +150,11 @@
     display: flex;
 }
 
-.selecoes-bandeiraselecao1-3 {
+.selecoes-bandeiraselecao2 {
     width: 128px;
     height: 72px;
     flex-shrink: 0;
-    background: #D8D8D8;
+    border-width: 0px;
 }
 
 .selecoes-0-6 {
@@ -169,7 +169,7 @@
     display: flex;
 }
 
-.selecoes-nomeselecao1-3 {
+.selecoes-nomeselecao2 {
     width: 326px;
     flex-shrink: 0;
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;

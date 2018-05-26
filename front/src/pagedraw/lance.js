@@ -8,15 +8,19 @@ function render() {
         <div className="lance-0">
             <div className="lance-0-0">
                 <div className="lance-0-0-0">
-                    <div className="lance-tempo-4">50</div>
+                    <div className="lance-tempo-4">{ this.props.tempo }</div>
                 </div>
             </div>
             <div className="lance-rectangle_1">
                 <div className="lance-0-1-0">
-                    <div className="lance-titulolance-9">TITULO LANCE</div>
+                    <div className="lance-titulolance-9">
+                        { this.props.tituloLance }
+                    </div>
                 </div>
                 <div className="lance-0-1-1">
-                    <div className="lance-desclance-0">Type something</div>
+                    <div className="lance-desclance-0">
+                        { this.props.descLance }
+                    </div>
                 </div>
             </div>
         </div>

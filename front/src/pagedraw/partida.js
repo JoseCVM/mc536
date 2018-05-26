@@ -8,19 +8,27 @@ function render() {
         <div className="partida-0">
             <div className="partida-rectangle_7">
                 <div className="partida-0-0-0">
-                    <div className="partida-datapartida-6">15/06/1997</div>
-                    <div className="partida-horapartida-3">{"18:00"}</div>
+                    <div className="partida-datapartida-6">
+                        { this.props.dataPartida }
+                    </div>
+                    <div className="partida-horapartida-3">
+                        { this.props.horaPartida }
+                    </div>
                 </div>
                 <div className="partida-0-0-1">
                     <div className="partida-text_5">Grupo</div>
-                    <div className="partida-numerogrupo-2">A</div>
+                    <div className="partida-numerogrupo-2">
+                        { this.props.numeroGrupo }
+                    </div>
                 </div>
                 <div className="partida-0-0-2">
-                    <div className="partida-estadio-8">{"Maracanã"}</div>
+                    <div className="partida-estadio-8">
+                        { this.props.estadio }
+                    </div>
                 </div>
                 <div className="partida-0-0-3">
                     <div className="partida-cidadapartida-0">
-                        Rio de Janeiro
+                        { this.props.cidadaPartida }
                     </div>
                 </div>
             </div>
@@ -31,14 +39,18 @@ function render() {
                             <div className="partida-0-1-0-0-0-0" /> 
                             <div className="partida-0-1-0-0-0-1">
                                 <div className="partida-0-1-0-0-0-1-0">
-                                    <div className="partida-nomeselecao1">{"Seleção 1"}</div>
+                                    <div className="partida-nomeselecao1">
+                                        { this.props.nomeSelecao1 }
+                                    </div>
                                 </div>
                             </div>
-                            <div className="partida-bandeiraselecao1" /> 
+                            <img src={this.props.bandeiraSelecao1} className="partida-bandeiraselecao1" /> 
                             <div className="partida-0-1-0-0-0-3" /> 
                             <div className="partida-0-1-0-0-0-4">
                                 <div className="partida-0-1-0-0-0-4-0">
-                                    <div className="partida-golsselecao1">5</div>
+                                    <div className="partida-golsselecao1">
+                                        { this.props.golsSelecao1 }
+                                    </div>
                                 </div>
                             </div>
                             <div className="partida-0-1-0-0-0-5" /> 
@@ -50,15 +62,19 @@ function render() {
                             <div className="partida-0-1-0-0-0-7" /> 
                             <div className="partida-0-1-0-0-0-8">
                                 <div className="partida-0-1-0-0-0-8-0">
-                                    <div className="partida-golsselecao2">2</div>
+                                    <div className="partida-golsselecao2">
+                                        { this.props.golsSelecao2 }
+                                    </div>
                                 </div>
                             </div>
                             <div className="partida-0-1-0-0-0-9" /> 
-                            <div className="partida-bandeiraselecao2" /> 
+                            <img src={this.props.bandeiraSelecao2} className="partida-bandeiraselecao2" /> 
                             <div className="partida-0-1-0-0-0-11" /> 
                             <div className="partida-0-1-0-0-0-12">
                                 <div className="partida-0-1-0-0-0-12-0">
-                                    <div className="partida-nomeselecao2">{"Seleção 2"}</div>
+                                    <div className="partida-nomeselecao2">
+                                        { this.props.nomeSelecao2 }
+                                    </div>
                                 </div>
                             </div>
                             <div className="partida-0-1-0-0-0-13" /> 

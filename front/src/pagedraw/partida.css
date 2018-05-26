@@ -158,7 +158,7 @@
 
 .partida-0-1-0-0-0-0 {
     height: 0px;
-    flex-grow: 0.25203252032520324;
+    flex-grow: 0.20294599018003273;
     flex-basis: 0px;
 }
 
@@ -193,12 +193,12 @@
     height: 54px;
     flex-shrink: 0;
     margin-left: 12px;
-    background: #D8D8D8;
+    border-width: 0px;
 }
 
 .partida-0-1-0-0-0-3 {
     height: 0px;
-    flex-grow: 0.012195121951219513;
+    flex-grow: 0.009819967266775777;
     flex-basis: 0px;
 }
 
@@ -230,7 +230,7 @@
 
 .partida-0-1-0-0-0-5 {
     height: 0px;
-    flex-grow: 0.044715447154471545;
+    flex-grow: 0.03600654664484452;
     flex-basis: 0px;
 }
 
@@ -262,7 +262,7 @@
 
 .partida-0-1-0-0-0-7 {
     height: 0px;
-    flex-grow: 0.02032520325203252;
+    flex-grow: 0.016366612111292964;
     flex-basis: 0px;
 }
 
@@ -294,7 +294,7 @@
 
 .partida-0-1-0-0-0-9 {
     height: 0px;
-    flex-grow: 0.014227642276422764;
+    flex-grow: 0.011456628477905073;
     flex-basis: 0px;
 }
 
@@ -302,18 +302,21 @@
     width: 96px;
     height: 54px;
     flex-shrink: 0;
-    background: #D8D8D8;
+    border-width: 0px;
 }
 
 .partida-0-1-0-0-0-11 {
     height: 0px;
-    flex-grow: 0.024390243902439025;
+    flex-grow: 0.019639934533551555;
     flex-basis: 0px;
 }
 
 .partida-0-1-0-0-0-12 {
     display: flex;
     flex-direction: column;
+    flex-grow: 0.19476268412438624;
+    flex-basis: 0px;
+    min-height: fit-content;
     padding-top: 9px;
     padding-bottom: 17px;
 }
@@ -323,8 +326,8 @@
 }
 
 .partida-nomeselecao2 {
-    width: 119px;
-    flex-shrink: 0;
+    flex-grow: 1;
+    flex-basis: 0px;
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
     color: #000000;
     font-size: 25px;
@@ -339,7 +342,7 @@
 
 .partida-0-1-0-0-0-13 {
     height: 0px;
-    flex-grow: 0.6321138211382114;
+    flex-grow: 0.5090016366612111;
     flex-basis: 0px;
 }
 

@@ -10,11 +10,18 @@ function render() {
     return <div className="tela_sele_o-tela_sele_o-2">
         <div className="tela_sele_o-0">
             <div className="tela_sele_o-menu_instance_4">
-                <Menu img_src={""} /> 
+                <Menu img_src={this.props.logo} /> 
             </div>
         </div>
         <div className="tela_sele_o-1">
-            <div className="tela_sele_o-text_5">Brasil</div>
+            <img src={this.props.bandeiraSelecao} className="tela_sele_o-bandeiraselecao-0" /> 
+            <div className="tela_sele_o-1-1">
+                <div className="tela_sele_o-1-1-0">
+                    <div className="tela_sele_o-nomeselecao-7">
+                        { this.props.nomeSelecao }
+                    </div>
+                </div>
+            </div>
         </div>
         <div className="tela_sele_o-2">
             <div className="tela_sele_o-rectangle_4">
@@ -29,8 +36,16 @@ function render() {
             </div>
         </div>
         <div className="tela_sele_o-3">
-            <div className="tela_sele_o-partida_instance-0">
-                <Partida /> 
+            <div className="tela_sele_o-3-0">
+                { this.props.listaPartidas.map((elem, i) => {
+                    return <div key={i} className="tela_sele_o-rectangle_5">
+                        <div className="tela_sele_o-3-0-0-0-0">
+                            <div className="tela_sele_o-partida_instance-0">
+                                <Partida bandeiraSelecao1={(elem.bandeiraSelecao1)} golsSelecao1={(elem.golsSelecao1)} golsSelecao2={(elem.golsSelecao2)} bandeiraSelecao2={(elem.bandeiraSelecao2)} nomeSelecao2={(elem.nomeSelecao2)} dataPartida={elem.dataPartida} horaPartida={elem.horaPartida} numeroGrupo={elem.numeroGrupo} estadio={elem.estadio} cidadaPartida={elem.cidadePartida} nomeSelecao1={""} /> 
+                            </div>
+                        </div>
+                    </div>;
+                }) }
             </div>
             <div className="tela_sele_o-3-1">
                 <div className="tela_sele_o-3-1-0">
@@ -39,7 +54,7 @@ function render() {
                             return <div key={i} className="tela_sele_o-rectangle_1">
                                 <div className="tela_sele_o-3-1-0-0-0-0-0">
                                     <div className="tela_sele_o-jogador_instance-8">
-                                        <Jogador /> 
+                                        <Jogador nome={elem.nome} camisa={elem.camisa} cartoesVermelhos={elem.cartoesVermelhos} cartoesAmarelos={elem.cartoesAmarelos} gols={elem.gols} posicao={elem.posicao} /> 
                                     </div>
                                 </div>
                             </div>;
