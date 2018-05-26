@@ -36,7 +36,7 @@ group by part.id_partida, part.codigo_pais, e.nome, c.nome \
 order by part.id_partida) t2 \
 on t1.id_partida = t2.id_partida and t1.codigo_pais < t2.codigo_pais ";
 
-var filtraPorSelecao = "and (t1.codigo_pais = 'BRA' or t2.codigo_pais = 'BRA')"
+var filtraPorSelecao = "and (t1.codigo_pais = '{0}' or t2.codigo_pais = '{0}' )"
 
 var getTodasAsPartidas = function() {
   return db.query(todasAsPartidas);
