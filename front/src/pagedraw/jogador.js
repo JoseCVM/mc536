@@ -10,18 +10,22 @@ function render() {
             <div className="jogador-rectangle_1">
                 <div className="jogador-1-0-0">
                     <div className="jogador-1-0-0-0" /> 
-                    <div className="jogador-nome-3">Neymar Junior</div>
+                    <div className="jogador-nome-3">{ this.props.nome }</div>
                     <div className="jogador-1-0-0-2" /> 
                     <div className="jogador-1-0-0-3">
                         <div className="jogador-1-0-0-3-0">
-                            <div className="jogador-numero-3">10</div>
+                            <div className="jogador-numero-3">
+                                { this.props.camisa }
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
             <div className="jogador-1-1">
                 <div className="jogador-1-1-0">
-                    <div className="jogador-cartoesvermelhos-2">7</div>
+                    <div className="jogador-cartoesvermelhos-2">
+                        { this.props.cartoesVermelhos }
+                    </div>
                 </div>
             </div>
             <div className="jogador-1-2" /> 
@@ -29,7 +33,9 @@ function render() {
             <div className="jogador-1-4" /> 
             <div className="jogador-1-5">
                 <div className="jogador-1-5-0">
-                    <div className="jogador-cartoes_amarelos-8">7</div>
+                    <div className="jogador-cartoes_amarelos-8">
+                        { this.props.cartoesAmarelos }
+                    </div>
                 </div>
             </div>
             <div className="jogador-1-6" /> 
@@ -37,7 +43,7 @@ function render() {
             <div className="jogador-1-8" /> 
             <div className="jogador-1-9">
                 <div className="jogador-1-9-0">
-                    <div className="jogador-gols-7">7</div>
+                    <div className="jogador-gols-7">{ this.props.gols }</div>
                 </div>
             </div>
             <div className="jogador-1-10" /> 
@@ -45,7 +51,9 @@ function render() {
             <div className="jogador-1-12" /> 
             <div className="jogador-1-13">
                 <div className="jogador-1-13-0">
-                    <div className="jogador-posicao-1">Atacante</div>
+                    <div className="jogador-posicao-1">
+                        { this.props.posicao }
+                    </div>
                 </div>
             </div>
             <div className="jogador-1-14" /> 

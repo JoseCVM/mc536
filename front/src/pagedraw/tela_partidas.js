@@ -9,7 +9,7 @@ function render() {
     return <div className="tela_partidas-tela_partidas-7">
         <div className="tela_partidas-0">
             <div className="tela_partidas-menu_instance_2">
-                <Menu img_src={""} /> 
+                <Menu img_src={this.props.logo} /> 
             </div>
         </div>
         <div className="tela_partidas-1">
@@ -20,12 +20,16 @@ function render() {
             </div>
         </div>
         <div className="tela_partidas-2">
-            <div className="tela_partidas-rectangle_5">
-                <div className="tela_partidas-2-0-0">
-                    <div className="tela_partidas-partida_instance-8">
-                        <Partida /> 
-                    </div>
-                </div>
+            <div className="tela_partidas-2-0">
+                { this.props.listaPartidas.map((elem, i) => {
+                    return <div key={i} className="tela_partidas-rectangle_5">
+                        <div className="tela_partidas-2-0-0-0-0">
+                            <div className="tela_partidas-partida_instance-8">
+                                <Partida bandeiraSelecao1={(elem.bandeiraSelecao1)} golsSelecao1={(elem.golsSelecao1)} golsSelecao2={(elem.golsSelecao2)} bandeiraSelecao2={(elem.bandeiraSelecao2)} nomeSelecao2={(elem.nomeSelecao2)} dataPartida={elem.dataPartida} horaPartida={elem.horaPartida} numeroGrupo={elem.numeroGrupo} estadio={elem.estadio} cidadaPartida={elem.cidadePartida} nomeSelecao1={(elem.nomeSelecao1)} /> 
+                            </div>
+                        </div>
+                    </div>;
+                }) }
             </div>
         </div>
     </div>;

@@ -10,12 +10,12 @@ function render() {
     return <div className="tela_partida-tela_partida-0">
         <div className="tela_partida-0">
             <div className="tela_partida-menu_instance_3">
-                <Menu img_src={""} /> 
+                <Menu img_src={this.props.logo} /> 
             </div>
         </div>
         <div className="tela_partida-1">
             <div className="tela_partida-selecoes_instance-3">
-                <Selecoes /> 
+                <Selecoes nomeSelecao1={(this.props.nomeSelecao1)} bandeiraSelecao1={(this.props.bandeiraSelecao1)} golsSelecao1={(this.props.golsSelecao1)} golsSelecao2={(this.props.golsSelecao2)} bandeiraSelecao2={(this.props.bandeiraSelecao2)} nomeSelecao2={(this.props.nomeSelecao2)} /> 
             </div>
         </div>
         <div className="tela_partida-2">
@@ -26,8 +26,16 @@ function render() {
             </div>
         </div>
         <div className="tela_partida-3">
-            <div className="tela_partida-lance_instance-0">
-                <Lance /> 
+            <div className="tela_partida-3-0">
+                { this.props.list.map((elem, i) => {
+                    return <div key={i} className="tela_partida-rectangle_1">
+                        <div className="tela_partida-3-0-0-0-0">
+                            <div className="tela_partida-lance_instance-0">
+                                <Lance tempo={elem.tempo} descLance={elem.descLance} tituloLance={elem.tituloLance} /> 
+                            </div>
+                        </div>
+                    </div>;
+                }) }
             </div>
         </div>
     </div>;
