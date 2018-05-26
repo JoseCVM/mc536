@@ -137,7 +137,11 @@ class App extends Component {
   	// Usamos o setState para modificar o this.state com o resultado da chamada de API.
       fetch("http://localhost:8081/pessoa")
         .then(response => response.json())
-        .then(response => this.setState({ name: response.nome }));
+        .then(response => this.setState({ name: response[0].nome }));
+
+      fetch("http://localhost:8081/grupos")
+        .then(response => response.json())
+        .then(response => this.setState({ listaGrupos: response }));
   }
 }
 
