@@ -8,7 +8,8 @@ var defineRoutes = function (app) {
 	app.get('/pessoa', pessoa.get);
 	app.get('/lance', lance.get);
 	app.get('/grupos', grupos.get);
-	app.get('/partida/:idJogador/fezGol', partida.getPartidasQueFezGol);
+	app.get('/partidas', partida.get);
+	app.get('/partidas/selecao/:codigoSelecao', partida.getPartidasPorSelecao);
 }
 
 module.exports = {

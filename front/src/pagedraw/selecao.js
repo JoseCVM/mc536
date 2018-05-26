@@ -6,12 +6,8 @@ import './selecao.css';
 function render() {
     return <div className="selecao-selecao-7">
         <div className="selecao-0">
-            <div className="selecao-0-0">
-                <div className="selecao-0-0-0">
-                    <div className="selecao-nomeselecao-4">
-                        { this.props.nomeSelecao }
-                    </div>
-                </div>
+            <div className="selecao-nomeselecao-4">
+                { this.props.nomeSelecao }
             </div>
             <div className="selecao-qtdpontos-4">
                 { this.props.pontos }
