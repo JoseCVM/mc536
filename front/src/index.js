@@ -8,6 +8,7 @@ import './index.css';
 // Pagedraw generates the JSX and CSS files you need.
 import TelaPrincipal from './pagedraw/tela_principal'
 import TelaPartidas from './pagedraw/tela_partidas'
+import TelaSelecao from './pagedraw/tela_selecao'
 // There's no special libraries or javascript layout systems, just code written for you.
 
 
@@ -68,6 +69,44 @@ class AppPartidas extends Component {
   }
 }
 
+
+class AppSelecao extends Component {
+
+  render() {
+    return (
+      //<TelaPartidas logo={this.state.logo} listaPartidas={this.state.listaPartidas}/>
+      <TelaSelecao logo={this.state.logo} nomeSelecao={this.state.nomeSelecao} listaJogadores = {this.state.listaJogadores} bandeiraSelecao = {this.state.bandeiraSelecao} listaPartidas={this.state.listaPartidas}/>
+    );
+  }
+
+  constructor(props) {
+  super(props);
+    this.state = {
+      logo: "/images/logo.png",
+      nomeSelecao: this.props.match.params.cod,
+      codigoPais: this.props.match.params.cod,
+      bandeiraSelecao: "",
+      listaPartidas: [],
+      listaJogadores: []
+    };
+  }
+
+  componentDidMount() {
+    
+
+      fetch("http://3b744fbf.ngrok.io/partidas/selecao/" + this.state.codigoPais)
+        .then(response => response.json())
+        .then(response => this.setState({ listaPartidas: response }));
+
+      fetch("http://3b744fbf.ngrok.io/jogadores/selecao/" + this.state.codigoPais)
+        .then(response => response.json())
+        .then(response => this.setState({ listaJogadores: response }));
+
+
+    this.setState({ bandeiraSelecao: "/images/bandeiras/" + this.state.codigoPais + ".gif" })
+  }
+}
+
 // No inicio da vida, renderizamos esse cara
 //render(<App />, document.getElementById('root'));
 
@@ -76,5 +115,6 @@ render((
   <Switch>
       <Route path="/grupos" component={App} />
       <Route path="/partidas" component={AppPartidas} />
+      <Route path="/selecao/:cod" component={AppSelecao} />
   </Switch>
 </Router>    ), document.getElementById('root'));

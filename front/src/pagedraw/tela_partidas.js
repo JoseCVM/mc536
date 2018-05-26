@@ -13,23 +13,30 @@ function render() {
             </div>
         </div>
         <div className="tela_partidas-1">
-            <div className="tela_partidas-rectangle_4">
+            <div className="tela_partidas-rectangle_1">
                 <div className="tela_partidas-1-0-0">
-                    <div className="tela_partidas-text_4">Partidas</div>
-                </div>
-            </div>
-        </div>
-        <div className="tela_partidas-2">
-            <div className="tela_partidas-2-0">
-                { this.props.listaPartidas.map((elem, i) => {
-                    return <div key={i} className="tela_partidas-rectangle_5">
-                        <div className="tela_partidas-2-0-0-0-0">
-                            <div className="tela_partidas-partida_instance-8">
-                                <Partida bandeiraSelecao1={(elem.bandeiraSelecao1)} golsSelecao1={(elem.golsSelecao1)} golsSelecao2={(elem.golsSelecao2)} bandeiraSelecao2={(elem.bandeiraSelecao2)} nomeSelecao2={(elem.nomeSelecao2)} dataPartida={elem.dataPartida} horaPartida={elem.horaPartida} numeroGrupo={elem.numeroGrupo} estadio={elem.estadio} cidadaPartida={elem.cidadePartida} nomeSelecao1={(elem.nomeSelecao1)} /> 
+                    <div className="tela_partidas-1-0-0-0">
+                        <div className="tela_partidas-rectangle_4">
+                            <div className="tela_partidas-1-0-0-0-0-0">
+                                <div className="tela_partidas-text_4">Partidas</div>
                             </div>
                         </div>
-                    </div>;
-                }) }
+                    </div>
+                    <div className="tela_partidas-1-0-0-1">
+                        <div className="tela_partidas-1-0-0-1-0">
+                            { this.props.listaPartidas.map((elem, i) => {
+                                return <div key={i} className="tela_partidas-rectangle_5">
+                                    <div className="tela_partidas-1-0-0-1-0-0-0-0">
+                                        <div className="tela_partidas-partida_instance-8">
+                                            <Partida bandeiraSelecao1={(elem.bandeiraSelecao1)} golsSelecao1={(elem.golsSelecao1)} golsSelecao2={(elem.golsSelecao2)} bandeiraSelecao2={(elem.bandeiraSelecao2)} nomeSelecao2={(elem.nomeSelecao2)} dataPartida={elem.dataPartida} horaPartida={elem.horaPartida} numeroGrupo={elem.numeroGrupo} estadio={elem.estadio} cidadaPartida={elem.cidadePartida} nomeSelecao1={(elem.nomeSelecao1)} /> 
+                                        </div>
+                                    </div>
+                                </div>;
+                            }) }
+                        </div>
+                    </div>
+                    <div className="tela_partidas-1-0-0-2" /> 
+                </div>
             </div>
         </div>
     </div>;
