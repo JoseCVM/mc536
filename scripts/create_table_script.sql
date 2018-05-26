@@ -9,7 +9,7 @@ CREATE TABLE pessoa
     nome varchar(50),
     data_nascimento date,
     nome_pais_origem varchar(40),
-    foto mediumblob,
+    foto varchar(255),
     PRIMARY KEY (id_pessoa),
     CONSTRAINT documento_pessoa UNIQUE (tipo_documento, documento)
 );
@@ -31,7 +31,7 @@ CREATE TABLE selecao
     descricao varchar(255),
     grupo int,
     entidade varchar(50),
-    bandeira mediumblob,
+    bandeira varchar(255),
     PRIMARY KEY (codigo_pais)
 );
 
@@ -145,7 +145,7 @@ CREATE TABLE estadio
     capacidade int,
     endereco varchar(255),
     descricao varchar(255),
-    foto blob,
+    foto varchar(255),
     PRIMARY KEY (id_estadio, id_cidade),
     FOREIGN KEY (id_cidade) REFERENCES cidade(id_cidade)
 );
