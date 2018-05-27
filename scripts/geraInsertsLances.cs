@@ -222,7 +222,7 @@ namespace ConsoleApp1
                                 }
                                 if(carta == 1000)
                                 {
-                                    if (nomAgressor == "Neymar") continue;
+                                    if (agressor == 306) continue;
                                     jogadores1.Remove(agressor);
                                     File.AppendAllText(@"C:\Users\josec.DESKTOP-8AUANLS\mc536\scripts\populate_lance.sql", string.Format("INSERT INTO lance (id_partida, id_pessoa, time_stamp, tipo_lance, descricao) VALUES({0}, {1}, '{2}', '{3}', '{4}');\n",
                         id, agressor, tempo, "CARTAO VERMELHO", string.Format("{0} foi expulso!", nomAgressor)));
@@ -239,7 +239,7 @@ namespace ConsoleApp1
                             {
                                 int jog = 306;
                                 string nomJog = nomePorId(jog);
-                                int dado = random.Next(0, 2401);
+                                int dado = random.Next(0, 1500);
                                 if(dado == 900)
                                 {
                                     File.AppendAllText(@"C:\Users\josec.DESKTOP-8AUANLS\mc536\scripts\populate_lance.sql", string.Format("INSERT INTO lance (id_partida, id_pessoa, time_stamp, tipo_lance, descricao) VALUES({0}, {1}, '{2}', '{3}', '{4}');\n",
@@ -286,7 +286,7 @@ namespace ConsoleApp1
                                 }
                                 if (carta == 1000)
                                 {
-                                    if (nomAgressor == "Neymar") continue;
+                                    if (agressor == 306) continue;
                                     jogadores2.Remove(agressor);
                                     File.AppendAllText(@"C:\Users\josec.DESKTOP-8AUANLS\mc536\scripts\populate_lance.sql", string.Format("INSERT INTO lance (id_partida, id_pessoa, time_stamp, tipo_lance, descricao) VALUES({0}, {1}, '{2}', '{3}', '{4}');\n",
                         id, agressor, tempo, "CARTAO VERMELHO", string.Format("{0} foi expulso!", nomAgressor)));
@@ -303,7 +303,7 @@ namespace ConsoleApp1
                             {
                                 int jog = 306;
                                 string nomJog = nomePorId(jog);
-                                int dado = random.Next(0, 2401);
+                                int dado = random.Next(0, 1500);
                                 if (dado == 900)
                                 {
                                     File.AppendAllText(@"C:\Users\josec.DESKTOP-8AUANLS\mc536\scripts\populate_lance.sql", string.Format("INSERT INTO lance (id_partida, id_pessoa, time_stamp, tipo_lance, descricao) VALUES({0}, {1}, '{2}', '{3}', '{4}');\n",
