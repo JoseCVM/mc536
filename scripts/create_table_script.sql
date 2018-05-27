@@ -215,7 +215,7 @@ CREATE TABLE lance
     time_stamp time,
     tipo_lance varchar(255),
     descricao varchar(255),
-    PRIMARY KEY (id_partida,id_pessoa,time_stamp),
+    PRIMARY KEY (id_partida,id_pessoa,time_stamp,tipo_lance),
     FOREIGN KEY (id_partida) REFERENCES partida(id_partida),
     FOREIGN KEY (id_pessoa) REFERENCES pessoa(id_pessoa)
 );
