@@ -4,8 +4,8 @@ var db = require('../db')
 var filtraPorSelecao =
 "select nome_conhecido as nome, posicao, numero_camisa as camisa, \
 sum(case l.tipo_lance when 'GOL' then 1 else 0 end) as gols, \
-sum(case l.tipo_lance when 'CARTAO_VERMELHO' then 1 else 0 end) as cartoesVermelhos, \
-sum(case l.tipo_lance when 'CARTAO_AMARELO' then 1 else 0 end) as cartoesAmarelos \
+sum(case l.tipo_lance when 'CARTAO VERMELHO' then 1 else 0 end) as cartoesVermelhos, \
+sum(case l.tipo_lance when 'CARTAO AMARELO' then 1 else 0 end) as cartoesAmarelos \
 from jogador j \
 left join lance l on l.id_pessoa = j.id_pessoa \
 where j.codigo_pais_joga='{0}' \

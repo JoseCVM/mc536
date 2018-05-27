@@ -8,10 +8,12 @@ import './index.css';
 // Pagedraw generates the JSX and CSS files you need.
 import TelaPrincipal from './pagedraw/tela_principal'
 import TelaPartidas from './pagedraw/tela_partidas'
+import TelaPartida from './pagedraw/tela_partida'
 import TelaSelecao from './pagedraw/tela_selecao'
+import TelaEstatisticas from './pagedraw/tela_estatisticas'
 // There's no special libraries or javascript layout systems, just code written for you.
 
-const apiUrl = 'http://localhost:8081';
+const apiUrl = 'http://5f551ce3.ngrok.io';
 
 
 class App extends Component {
@@ -109,14 +111,72 @@ class AppSelecao extends Component {
   }
 }
 
+class AppEstatiscas extends Component {
+
+  render() {
+    return (
+      <TelaEstatisticas logo={this.state.logo} />
+    );
+  }
+
+  constructor() {
+  super();
+    this.state = {
+      logo: "/images/logo.png",
+    };
+  }
+
+  componentDidMount() {
+  }
+}
+
+class AppLances extends Component {
+
+  render() {
+    return (
+      <TelaPartida logo={this.state.logo} listaLances={this.state.listaLances} partida={this.state.partida}/>
+    );
+  }
+
+  constructor(props) {
+  super(props);
+    this.state = {
+      logo: "/images/logo.png",
+      idPartida: this.props.match.params.id,
+      listaLances: [],
+      partida: {
+        nomeSelecao1: "",
+        nomeSelecao2: "",
+        golsSelecao1: "",
+        golsSelecao2: "",
+        bandeiraSelecao1: "",
+        bandeiraSelecao2: ""
+      }
+    };
+  }
+
+  componentDidMount() {
+      fetch(apiUrl + "/lances/partida/" + this.state.idPartida)
+        .then(response => response.json())
+        .then(response => this.setState({ listaLances: response }));
+
+      fetch(apiUrl + "/partidas/" + this.state.idPartida)
+        .then(response => response.json())
+        .then(response => this.setState({ partida: response[0] }));
+  }
+}
+
 // No inicio da vida, renderizamos esse cara
 //render(<App />, document.getElementById('root'));
 
 render((
 <Router>
   <Switch>
+      <Route exact path="/" component={App} />
       <Route path="/grupos" component={App} />
       <Route path="/partidas" component={AppPartidas} />
+      <Route path="/estatisticas" component={AppEstatiscas} />
       <Route path="/selecao/:cod" component={AppSelecao} />
+      <Route path="/partida/:id" component={AppLances} />
   </Switch>
 </Router>    ), document.getElementById('root'));

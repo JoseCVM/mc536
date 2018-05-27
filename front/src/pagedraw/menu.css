@@ -23,13 +23,18 @@
     display: flex;
 }
 
+.menu-0-0-0-0 {
+    flex-shrink: 0;
+    display: flex;
+}
+
 .menu-logo-0 {
     width: 143px;
     height: 87px;
-    flex-shrink: 0;
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
+    flex-grow: 1;
 }
 
 .menu-0-1 {
@@ -59,12 +64,17 @@
     flex-grow: 1;
 }
 
-.menu-bot_o_menu_instance_2-1 {
+.menu-0-3 {
     flex-shrink: 0;
+    display: flex;
+}
+
+.menu-bot_o_menu_instance_2-1 {
     display: flex;
     flex-direction: column;
     min-width: 132px;
     min-height: 93px;
+    flex-grow: 1;
 }
 
 * {

@@ -13,6 +13,9 @@
 .grupo-rectangle_1 {
     display: flex;
     flex-direction: column;
+    flex-grow: 1;
+    flex-basis: 0px;
+    min-height: fit-content;
     padding-top: 10px;
     padding-bottom: 4px;
     background: rgb(218, 216, 216);
@@ -21,7 +24,6 @@
 .grupo-0-0-0 {
     display: flex;
     padding-left: 24px;
-    padding-right: 1001px;
 }
 
 .grupo-grupo-5 {
@@ -52,6 +54,12 @@
     text-decoration: none;
     text-align: left;
     word-wrap: break-word;
+}
+
+.grupo-0-0-0-2 {
+    height: 0px;
+    flex-grow: 1;
+    flex-basis: 0px;
 }
 
 .grupo-1 {

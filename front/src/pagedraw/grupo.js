@@ -13,6 +13,7 @@ function render() {
                     <div className="grupo-numerogrupo-0">
                         { this.props.numeroGrupo }
                     </div>
+                    <div className="grupo-0-0-0-2" /> 
                 </div>
             </div>
         </div>

@@ -13,6 +13,11 @@ function render() {
             </div>
             <div className="lance-rectangle_1">
                 <div className="lance-0-1-0">
+                    <div className="lance-0-1-0-0">
+                        <div className="lance-0-1-0-0-0">
+                            <img src={this.props.bandeira} className="lance-bandeira-3" /> 
+                        </div>
+                    </div>
                     <div className="lance-titulolance-9">
                         { this.props.tituloLance }
                     </div>

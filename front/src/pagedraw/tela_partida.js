@@ -14,28 +14,35 @@ function render() {
             </div>
         </div>
         <div className="tela_partida-1">
-            <div className="tela_partida-selecoes_instance-3">
-                <Selecoes nomeSelecao1={(this.props.nomeSelecao1)} bandeiraSelecao1={(this.props.bandeiraSelecao1)} golsSelecao1={(this.props.golsSelecao1)} golsSelecao2={(this.props.golsSelecao2)} bandeiraSelecao2={(this.props.bandeiraSelecao2)} nomeSelecao2={(this.props.nomeSelecao2)} /> 
-            </div>
-        </div>
-        <div className="tela_partida-2">
-            <div className="tela_partida-rectangle_8">
-                <div className="tela_partida-2-0-0">
-                    <div className="tela_partida-text_6">Lance a Lance</div>
-                </div>
-            </div>
-        </div>
-        <div className="tela_partida-3">
-            <div className="tela_partida-3-0">
-                { this.props.list.map((elem, i) => {
-                    return <div key={i} className="tela_partida-rectangle_1">
-                        <div className="tela_partida-3-0-0-0-0">
-                            <div className="tela_partida-lance_instance-0">
-                                <Lance tempo={elem.tempo} descLance={elem.descLance} tituloLance={elem.tituloLance} /> 
+            <div className="tela_partida-rectangle_19">
+                <div className="tela_partida-1-0-0">
+                    <div className="tela_partida-1-0-0-0">
+                        <div className="tela_partida-selecoes_instance-3">
+                            <Selecoes nomeSelecao1={(this.props.partida.nomeSelecao1)} bandeiraSelecao1={(this.props.partida.bandeiraSelecao1)} golsSelecao1={(this.props.partida.golsSelecao1)} golsSelecao2={(this.props.partida.golsSelecao2)} bandeiraSelecao2={(this.props.partida.bandeiraSelecao2)} nomeSelecao2={(this.props.partida.nomeSelecao2)} /> 
+                        </div>
+                    </div>
+                    <div className="tela_partida-1-0-0-1">
+                        <div className="tela_partida-rectangle_8">
+                            <div className="tela_partida-1-0-0-1-0-0">
+                                <div className="tela_partida-text_6">Lance a Lance</div>
                             </div>
                         </div>
-                    </div>;
-                }) }
+                    </div>
+                    <div className="tela_partida-1-0-0-2">
+                        <div className="tela_partida-1-0-0-2-0">
+                            { this.props.listaLances.map((elem, i) => {
+                                return <div key={i} className="tela_partida-rectangle_1">
+                                    <div className="tela_partida-1-0-0-2-0-0-0-0">
+                                        <div className="tela_partida-lance_instance-0">
+                                            <Lance tempo={elem.minuto} descLance={elem.descricao} tituloLance={elem.tituloLance} bandeira={elem.bandeira} /> 
+                                        </div>
+                                    </div>
+                                </div>;
+                            }) }
+                        </div>
+                    </div>
+                    <div className="tela_partida-1-0-0-3" /> 
+                </div>
             </div>
         </div>
     </div>;

@@ -9,7 +9,9 @@ function render() {
         <div className="menu-0">
             <div className="menu-0-0">
                 <div className="menu-0-0-0">
-                    <div className="menu-logo-0" style={{"backgroundImage": ("url('"+(this.props.img_src)+"')")}} /> 
+                    <a href="/" className="menu-0-0-0-0">
+                        <div className="menu-logo-0" style={{"backgroundImage": ("url('"+(this.props.img_src)+"')")}} /> 
+                    </a>
                 </div>
             </div>
             <a href="/grupos" className="menu-0-1">
@@ -22,9 +24,11 @@ function render() {
                     <Botao_menu item={"Partidas"} /> 
                 </div>
             </a>
-            <div className="menu-bot_o_menu_instance_2-1">
-                <Botao_menu item={"Estatísticas"} /> 
-            </div>
+            <a href="/estatisticas" className="menu-0-3">
+                <div className="menu-bot_o_menu_instance_2-1">
+                    <Botao_menu item={"Estatísticas"} /> 
+                </div>
+            </a>
         </div>
     </div>;
 };

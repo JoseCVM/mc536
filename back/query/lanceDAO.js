@@ -7,7 +7,8 @@ j.nome_conhecido as nomeJogador, s.bandeira \
 from lance l \
 left join jogador j on j.id_pessoa=l.id_pessoa \
 left join selecao s on j.codigo_pais_joga = s.codigo_pais \
-where l.id_partida = {0}";
+where l.id_partida = {0} \
+order by l.time_stamp desc";
 
 var getLancesPorIdPartida = function(idPartida) {
   return db.query(format(getLancesPartidaQuery, idPartida));

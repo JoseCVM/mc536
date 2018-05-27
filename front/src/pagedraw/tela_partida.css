@@ -5,8 +5,8 @@
     display: flex;
     flex-direction: column;
     flex-grow: 1;
-    padding-bottom: 349px;
     background: #FFFFFF;
+    min-height: 100vh;
 }
 
 .tela_partida-0 {
@@ -14,15 +14,38 @@
 }
 
 .tela_partida-menu_instance_3 {
-    flex-shrink: 0;
+    flex-grow: 1;
+    flex-basis: 0px;
     display: flex;
     flex-direction: column;
-    min-width: 1366px;
 }
 
 .tela_partida-1 {
     display: flex;
-    margin-top: 30px;
+    flex-grow: 1;
+    flex-basis: 0px;
+    min-height: fit-content;
+}
+
+.tela_partida-rectangle_19 {
+    flex-grow: 1;
+    flex-basis: 0px;
+    overflow: scroll;
+    position: relative;
+}
+
+.tela_partida-1-0-0 {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    padding-top: 30px;
+    position: absolute;
+    width: 100%;
+    min-height: 100%;
+}
+
+.tela_partida-1-0-0-0 {
+    display: flex;
     padding-left: 83px;
     padding-right: 83px;
 }
@@ -33,7 +56,7 @@
     flex-direction: column;
 }
 
-.tela_partida-2 {
+.tela_partida-1-0-0-1 {
     display: flex;
     margin-top: 21px;
     padding-left: 83px;
@@ -48,7 +71,7 @@
     background: #D8D8D8;
 }
 
-.tela_partida-2-0-0 {
+.tela_partida-1-0-0-1-0-0 {
     display: flex;
     padding-left: 18px;
     padding-right: 813px;
@@ -69,14 +92,14 @@
     word-wrap: break-word;
 }
 
-.tela_partida-3 {
+.tela_partida-1-0-0-2 {
     display: flex;
     margin-top: 1px;
     padding-left: 57px;
     padding-right: 72px;
 }
 
-.tela_partida-3-0 {
+.tela_partida-1-0-0-2-0 {
     display: flex;
     flex-direction: column;
     margin-top: -2px;
@@ -85,12 +108,13 @@
 .tela_partida-rectangle_1 {
     display: flex;
     flex-direction: column;
+    padding-bottom: 1px;
     background: rgb(255, 255, 255);
     margin-top: 2px;
     flex-grow: 1;
 }
 
-.tela_partida-3-0-0-0-0 {
+.tela_partida-1-0-0-2-0-0-0-0 {
     display: flex;
     padding-left: 27px;
     padding-right: 10px;
@@ -100,6 +124,11 @@
     flex-shrink: 0;
     display: flex;
     flex-direction: column;
+}
+
+.tela_partida-1-0-0-3 {
+    flex-grow: 1;
+    flex-basis: 0px;
 }
 
 * {
