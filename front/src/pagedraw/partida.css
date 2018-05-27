@@ -158,7 +158,7 @@
 
 .partida-0-1-0-0-0-0 {
     height: 0px;
-    flex-grow: 0.17092337917485265;
+    flex-grow: 0.2106537530266344;
     flex-basis: 0px;
 }
 
@@ -198,7 +198,7 @@
 
 .partida-0-1-0-0-0-3 {
     height: 0px;
-    flex-grow: 0.011787819253438114;
+    flex-grow: 0.014527845036319613;
     flex-basis: 0px;
 }
 
@@ -230,7 +230,7 @@
 
 .partida-0-1-0-0-0-5 {
     height: 0px;
-    flex-grow: 0.043222003929273084;
+    flex-grow: 0.053268765133171914;
     flex-basis: 0px;
 }
 
@@ -262,7 +262,7 @@
 
 .partida-0-1-0-0-0-7 {
     height: 0px;
-    flex-grow: 0.019646365422396856;
+    flex-grow: 0.024213075060532687;
     flex-basis: 0px;
 }
 
@@ -292,20 +292,27 @@
     word-wrap: break-word;
 }
 
-.partida-0-1-0-0-0-9 {
-    height: 0px;
-    flex-grow: 0.22593320235756384;
-    flex-basis: 0px;
+.partida-bandeiraselecao2 {
+    width: 96px;
+    height: 54px;
+    flex-shrink: 0;
+    border-width: 0px;
 }
 
 .partida-0-1-0-0-0-10 {
+    height: 0px;
+    flex-grow: 0.04600484261501211;
+    flex-basis: 0px;
+}
+
+.partida-0-1-0-0-0-11 {
     display: flex;
     flex-direction: column;
     padding-top: 9px;
     padding-bottom: 17px;
 }
 
-.partida-0-1-0-0-0-10-0 {
+.partida-0-1-0-0-0-11-0 {
     display: flex;
 }
 
@@ -324,9 +331,9 @@
     word-wrap: break-word;
 }
 
-.partida-0-1-0-0-0-11 {
+.partida-0-1-0-0-0-12 {
     height: 0px;
-    flex-grow: 0.5284872298624754;
+    flex-grow: 0.6513317191283293;
     flex-basis: 0px;
 }
 

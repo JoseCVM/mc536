@@ -67,15 +67,16 @@ function render() {
                                     </div>
                                 </div>
                             </div>
-                            <div className="partida-0-1-0-0-0-9" /> 
-                            <div className="partida-0-1-0-0-0-10">
-                                <div className="partida-0-1-0-0-0-10-0">
+                            <img src={this.props.bandeiraSelecao2} className="partida-bandeiraselecao2" /> 
+                            <div className="partida-0-1-0-0-0-10" /> 
+                            <div className="partida-0-1-0-0-0-11">
+                                <div className="partida-0-1-0-0-0-11-0">
                                     <div className="partida-nomeselecao2">
                                         { this.props.nomeSelecao2 }
                                     </div>
                                 </div>
                             </div>
-                            <div className="partida-0-1-0-0-0-11" /> 
+                            <div className="partida-0-1-0-0-0-12" /> 
                         </div>
                     </div>
                 </div>
