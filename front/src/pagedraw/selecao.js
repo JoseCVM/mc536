@@ -6,10 +6,10 @@ import './selecao.css';
 function render() {
     return <div className="selecao-selecao-7">
         <div className="selecao-0">
-            <div className="selecao-image_4" style={{"backgroundImage": ("url('"+(this.props.img_src)+"')")}} /> 
+            <div onClick={() => { window.location = '/selecao/' + this.props.codPais; }} className="selecao-image_4" style={{"backgroundImage": ("url('"+(this.props.img_src)+"')")}} /> 
             <div className="selecao-0-1">
                 <div className="selecao-0-1-0">
-                    <div className="selecao-nomeselecao-4" style={{"fontSize": this.props.font}}>
+                    <div onClick={() => { window.location = '/selecao/' + this.props.codPais; }} className="selecao-nomeselecao-4" style={{"fontSize": this.props.font}}>
                         { this.props.nomeSelecao }
                     </div>
                 </div>
@@ -47,9 +47,14 @@ function render() {
             </div>
         </div>
         <div className="selecao-1">
+            <div className="selecao-text_7">
+                { this.props.codPais }
+            </div>
+        </div>
+        <div className="selecao-2">
             <div className="selecao-line_2" /> 
         </div>
-        <div className="selecao-2" /> 
+        <div className="selecao-3" /> 
     </div>;
 };
 

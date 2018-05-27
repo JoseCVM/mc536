@@ -24,7 +24,7 @@ class App extends Component {
   	// A partir dai so roda coisas do pagedraw. Tudo que temos que fazer eh modificar 
   	// no pagedraw e adicionar mais parametros aqui depois para a tela principal.
     return (
-	    <TelaPrincipal listaGrupos={this.state.listaGrupos} logo={this.state.logo}/>
+	    <TelaPrincipal listaGrupos={this.state.listaGrupos} logo={this.state.logo} handleClick={this.state.handleClick}/>
     );
   }
 
