@@ -25,10 +25,6 @@ function render() {
             <div className="menu-bot_o_menu_instance_2-1">
                 <Botao_menu item={"Estatísticas"} /> 
             </div>
-            <div className="menu-bot_o_menu_instance_2-0">
-                <Botao_menu item={"Estádios"} /> 
-            </div>
-            <div className="menu-0-5" /> 
         </div>
     </div>;
 };

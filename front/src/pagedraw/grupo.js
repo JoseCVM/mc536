@@ -7,46 +7,34 @@ import './grupo.css';
 function render() {
     return <div className="grupo-grupo-2">
         <div className="grupo-0">
-            <div className="grupo-grupo-5">GRUPO </div>
-            <div className="grupo-numerogrupo-0">
-                { this.props.numeroGrupo }
+            <div className="grupo-rectangle_1">
+                <div className="grupo-0-0-0">
+                    <div className="grupo-grupo-5">Grupo</div>
+                    <div className="grupo-numerogrupo-0">
+                        { this.props.numeroGrupo }
+                    </div>
+                </div>
             </div>
-            <div className="grupo-0-2" /> 
         </div>
         <div className="grupo-1">
-            <div className="grupo-divisor_2" /> 
+            <div className="grupo-selecao_instance-6">
+                <Selecao nomeSelecao={""} pontos={"P"} jogos={"J"} vitorias={"V"} empates={"E"} derrotas={"D"} golsPro={"GP"} golsContra={"GC"} saldo={"SG"} porcentagem={"%"} font={14} img_src={""} /> 
+            </div>
         </div>
         <div className="grupo-2">
-            <div className="grupo-classificacao-2">
-                {"Classificação"}
-            </div>
-            <div className="grupo-p-6">P</div>
-            <div className="grupo-j-3">J</div>
-            <div className="grupo-v-7">V</div>
-            <div className="grupo-e-9">E</div>
-            <div className="grupo-d-5">D</div>
-            <div className="grupo-gp-5">GP</div>
-            <div className="grupo-gc-6">GC</div>
-            <div className="grupo-sg-8">SG</div>
-            <div className="grupo-porcentagem-2">{"%"}</div>
-        </div>
-        <div className="grupo-3">
-            <div className="grupo-divisor_1" /> 
-        </div>
-        <div className="grupo-4">
-            <div className="grupo-4-0">
+            <div className="grupo-2-0">
                 { this.props.selecoes.map((elem, i) => {
                     return <div key={i} className="grupo-rectangle_3">
-                        <div className="grupo-4-0-0-0-0">
+                        <div className="grupo-2-0-0-0-0">
                             <div className="grupo-primeiraselecao-2">
-                                <Selecao nomeSelecao={elem.nome} pontos={elem.pontos} jogos={elem.jogos} vitorias={elem.vitorias} empates={elem.empates} derrotas={elem.derrotas} golsPro={elem.golsPro} golsContra={elem.golsContra} saldo={elem.saldo} porcentagem={elem.porcentagem} /> 
+                                <Selecao nomeSelecao={elem.nome} pontos={elem.pontos} jogos={elem.jogos} vitorias={elem.vitorias} empates={elem.empates} derrotas={elem.derrotas} golsPro={elem.golsPro} golsContra={elem.golsContra} saldo={elem.saldo} porcentagem={elem.porcentagem} font={22} img_src={elem.bandeira} /> 
                             </div>
                         </div>
                     </div>;
                 }) }
             </div>
         </div>
-        <div className="grupo-5" /> 
+        <div className="grupo-3" /> 
     </div>;
 };
 

@@ -77,13 +77,13 @@
     min-height: fit-content;
     margin-top: 21px;
     padding-left: 36px;
-    padding-right: 40px;
+    padding-right: 33px;
 }
 
 .tela_selecao-rectangle_1 {
     display: flex;
     flex-direction: column;
-    flex-grow: 0.5884218873909596;
+    flex-grow: 0.6216429699842022;
     flex-basis: 0px;
     min-height: fit-content;
 }
@@ -149,7 +149,7 @@
     flex-direction: column;
     min-height: fit-content;
     padding-top: 7px;
-    padding-bottom: 8px;
+    padding-bottom: 7px;
     background: rgb(255, 255, 255);
     flex-grow: 1;
 }
@@ -177,10 +177,10 @@
 .tela_selecao-2-1 {
     display: flex;
     flex-direction: column;
-    flex-grow: 0.4115781126090404;
+    flex-grow: 0.3783570300157978;
     flex-basis: 0px;
     min-height: fit-content;
-    margin-left: 29px;
+    margin-left: 31px;
 }
 
 .tela_selecao-2-1-0 {
@@ -195,7 +195,7 @@
     min-height: fit-content;
     padding-top: 8px;
     padding-bottom: 8px;
-    background: rgb(197, 196, 196);
+    background: rgb(218, 216, 216);
 }
 
 .tela_selecao-2-1-0-0-0 {
@@ -226,7 +226,7 @@
 
 .tela_selecao-2-1-1 {
     display: flex;
-    margin-top: 11px;
+    margin-top: 17px;
 }
 
 .tela_selecao-2-1-1-0 {

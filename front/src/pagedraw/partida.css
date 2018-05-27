@@ -158,15 +158,15 @@
 
 .partida-0-1-0-0-0-0 {
     height: 0px;
-    flex-grow: 0.20294599018003273;
+    flex-grow: 0.17092337917485265;
     flex-basis: 0px;
 }
 
 .partida-0-1-0-0-0-1 {
     display: flex;
     flex-direction: column;
-    padding-top: 9px;
-    padding-bottom: 17px;
+    padding-top: 11px;
+    padding-bottom: 15px;
 }
 
 .partida-0-1-0-0-0-1-0 {
@@ -174,14 +174,14 @@
 }
 
 .partida-nomeselecao1 {
-    width: 119px;
+    width: 161px;
     flex-shrink: 0;
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
     color: #000000;
     font-size: 25px;
     line-height: 28px;
     letter-spacing: 0px;
-    font-weight: normal;
+    font-weight: bold;
     font-style: normal;
     text-decoration: none;
     text-align: right;
@@ -192,13 +192,13 @@
     width: 96px;
     height: 54px;
     flex-shrink: 0;
-    margin-left: 12px;
+    margin-left: 7px;
     border-width: 0px;
 }
 
 .partida-0-1-0-0-0-3 {
     height: 0px;
-    flex-grow: 0.009819967266775777;
+    flex-grow: 0.011787819253438114;
     flex-basis: 0px;
 }
 
@@ -221,7 +221,7 @@
     font-size: 25px;
     line-height: 28px;
     letter-spacing: 0px;
-    font-weight: normal;
+    font-weight: bold;
     font-style: normal;
     text-decoration: none;
     text-align: center;
@@ -230,7 +230,7 @@
 
 .partida-0-1-0-0-0-5 {
     height: 0px;
-    flex-grow: 0.03600654664484452;
+    flex-grow: 0.043222003929273084;
     flex-basis: 0px;
 }
 
@@ -238,7 +238,7 @@
     display: flex;
     flex-direction: column;
     padding-top: 14px;
-    padding-bottom: 15px;
+    padding-bottom: 16px;
 }
 
 .partida-0-1-0-0-0-6-0 {
@@ -253,7 +253,7 @@
     font-size: 22px;
     line-height: 25px;
     letter-spacing: 0px;
-    font-weight: normal;
+    font-weight: bold;
     font-style: normal;
     text-decoration: none;
     text-align: left;
@@ -262,7 +262,7 @@
 
 .partida-0-1-0-0-0-7 {
     height: 0px;
-    flex-grow: 0.016366612111292964;
+    flex-grow: 0.019646365422396856;
     flex-basis: 0px;
 }
 
@@ -285,7 +285,7 @@
     font-size: 25px;
     line-height: 28px;
     letter-spacing: 0px;
-    font-weight: normal;
+    font-weight: bold;
     font-style: normal;
     text-decoration: none;
     text-align: center;
@@ -294,55 +294,39 @@
 
 .partida-0-1-0-0-0-9 {
     height: 0px;
-    flex-grow: 0.011456628477905073;
+    flex-grow: 0.22593320235756384;
     flex-basis: 0px;
 }
 
-.partida-bandeiraselecao2 {
-    width: 96px;
-    height: 54px;
-    flex-shrink: 0;
-    border-width: 0px;
-}
-
-.partida-0-1-0-0-0-11 {
-    height: 0px;
-    flex-grow: 0.019639934533551555;
-    flex-basis: 0px;
-}
-
-.partida-0-1-0-0-0-12 {
+.partida-0-1-0-0-0-10 {
     display: flex;
     flex-direction: column;
-    flex-grow: 0.19476268412438624;
-    flex-basis: 0px;
-    min-height: fit-content;
     padding-top: 9px;
     padding-bottom: 17px;
 }
 
-.partida-0-1-0-0-0-12-0 {
+.partida-0-1-0-0-0-10-0 {
     display: flex;
 }
 
 .partida-nomeselecao2 {
-    flex-grow: 1;
-    flex-basis: 0px;
+    width: 161px;
+    flex-shrink: 0;
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
     color: #000000;
     font-size: 25px;
     line-height: 28px;
     letter-spacing: 0px;
-    font-weight: normal;
+    font-weight: bold;
     font-style: normal;
     text-decoration: none;
     text-align: left;
     word-wrap: break-word;
 }
 
-.partida-0-1-0-0-0-13 {
+.partida-0-1-0-0-0-11 {
     height: 0px;
-    flex-grow: 0.5090016366612111;
+    flex-grow: 0.5284872298624754;
     flex-basis: 0px;
 }
 

@@ -11,6 +11,8 @@ import TelaPartidas from './pagedraw/tela_partidas'
 import TelaSelecao from './pagedraw/tela_selecao'
 // There's no special libraries or javascript layout systems, just code written for you.
 
+const apiUrl = 'http://localhost:8081';
+
 
 class App extends Component {
 
@@ -40,7 +42,7 @@ class App extends Component {
   	// Não é certo fazer coisas que demoram tipo fetch no construtor.
   	// Não pode modificar this.state diretamente.
   	// Usamos o setState para modificar o this.state com o resultado da chamada de API.
-      fetch("http://3b744fbf.ngrok.io/grupos")
+      fetch(apiUrl + "/grupos")
         .then(response => response.json())
         .then(response => this.setState({ listaGrupos: response }));
   }
@@ -63,7 +65,7 @@ class AppPartidas extends Component {
   }
 
   componentDidMount() {
-      fetch("http://3b744fbf.ngrok.io/partidas")
+      fetch(apiUrl + "/partidas")
         .then(response => response.json())
         .then(response => this.setState({ listaPartidas: response }));
   }
@@ -94,11 +96,11 @@ class AppSelecao extends Component {
   componentDidMount() {
     
 
-      fetch("http://3b744fbf.ngrok.io/partidas/selecao/" + this.state.codigoPais)
+      fetch(apiUrl + "/partidas/selecao/" + this.state.codigoPais)
         .then(response => response.json())
         .then(response => this.setState({ listaPartidas: response }));
 
-      fetch("http://3b744fbf.ngrok.io/jogadores/selecao/" + this.state.codigoPais)
+      fetch(apiUrl + "/jogadores/selecao/" + this.state.codigoPais)
         .then(response => response.json())
         .then(response => this.setState({ listaJogadores: response }));
 

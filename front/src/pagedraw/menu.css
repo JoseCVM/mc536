@@ -8,15 +8,13 @@
 
 .menu-0 {
     display: flex;
-    padding-left: 7px;
+    padding-left: 19px;
+    padding-right: 855px;
 }
 
 .menu-0-0 {
     display: flex;
     flex-direction: column;
-    flex-grow: 0.10948905109489052;
-    flex-basis: 0px;
-    min-height: fit-content;
     padding-top: 3px;
     padding-bottom: 3px;
 }
@@ -26,9 +24,9 @@
 }
 
 .menu-logo-0 {
+    width: 143px;
     height: 87px;
-    flex-grow: 1;
-    flex-basis: 0px;
+    flex-shrink: 0;
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
@@ -36,13 +34,14 @@
 
 .menu-0-1 {
     flex-shrink: 0;
-    margin-left: 12px;
+    margin-left: 23px;
     display: flex;
 }
 
 .menu-bot_o_menu_instance-8 {
     display: flex;
     flex-direction: column;
+    min-width: 97px;
     min-height: 93px;
     flex-grow: 1;
 }
@@ -55,6 +54,7 @@
 .menu-bot_o_menu_instance_2 {
     display: flex;
     flex-direction: column;
+    min-width: 97px;
     min-height: 93px;
     flex-grow: 1;
 }
@@ -63,20 +63,8 @@
     flex-shrink: 0;
     display: flex;
     flex-direction: column;
+    min-width: 132px;
     min-height: 93px;
-}
-
-.menu-bot_o_menu_instance_2-0 {
-    flex-shrink: 0;
-    display: flex;
-    flex-direction: column;
-    min-height: 93px;
-}
-
-.menu-0-5 {
-    height: 0px;
-    flex-grow: 0.8905109489051095;
-    flex-basis: 0px;
 }
 
 * {

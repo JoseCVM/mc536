@@ -11,6 +11,7 @@ function render() {
                 <div className="botao_menu-text-2">
                     { this.props.item }
                 </div>
+                <div className="botao_menu-0-1-1" /> 
             </div>
         </div>
         { (('default') === "default") ?
@@ -20,6 +21,7 @@ function render() {
                     <div className="botao_menu-text-6">
                         { this.props.item }
                     </div>
+                    <div className="botao_menu-1-0-1-1" /> 
                 </div>
             </div>
         : null}
@@ -29,9 +31,11 @@ function render() {
                 <div className="botao_menu-text-0">
                     { this.props.item }
                 </div>
+                <div className="botao_menu-2-1-1" /> 
             </div>
             <div className="botao_menu-2-2">
                 <div className="botao_menu-rectangle-0" /> 
+                <div className="botao_menu-2-2-1" /> 
             </div>
         </div>
     </div>;

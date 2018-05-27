@@ -6,40 +6,50 @@ import './selecao.css';
 function render() {
     return <div className="selecao-selecao-7">
         <div className="selecao-0">
-            <div className="selecao-nomeselecao-4">
-                { this.props.nomeSelecao }
+            <div className="selecao-image_4" style={{"backgroundImage": ("url('"+(this.props.img_src)+"')")}} /> 
+            <div className="selecao-0-1">
+                <div className="selecao-0-1-0">
+                    <div className="selecao-nomeselecao-4" style={{"fontSize": this.props.font}}>
+                        { this.props.nomeSelecao }
+                    </div>
+                </div>
             </div>
-            <div className="selecao-qtdpontos-4">
-                { this.props.pontos }
-            </div>
-            <div className="selecao-qtdjogos-0">
-                { this.props.jogos }
-            </div>
-            <div className="selecao-qtdvitorias-5">
-                { this.props.vitorias }
-            </div>
-            <div className="selecao-qtdempates-6">
-                { this.props.empates }
-            </div>
-            <div className="selecao-qtdderrotas-2">
-                { this.props.derrotas }
-            </div>
-            <div className="selecao-golspro-4">
-                { this.props.golsPro }
-            </div>
-            <div className="selecao-golscontra-2">
-                { this.props.golsContra }
-            </div>
-            <div className="selecao-saldogols-7">
-                { this.props.saldo }
-            </div>
-            <div className="selecao-rendimento-8">
-                { this.props.porcentagem }
+            <div className="selecao-rectangle_1">
+                <div className="selecao-0-2-0">
+                    <div className="selecao-qtdpontos-4" style={{"fontSize": this.props.font}}>
+                        { this.props.pontos }
+                    </div>
+                    <div className="selecao-qtdjogos-0" style={{"fontSize": this.props.font}}>
+                        { this.props.jogos }
+                    </div>
+                    <div className="selecao-qtdvitorias-5" style={{"fontSize": this.props.font}}>
+                        { this.props.vitorias }
+                    </div>
+                    <div className="selecao-qtdempates-6" style={{"fontSize": this.props.font}}>
+                        { this.props.empates }
+                    </div>
+                    <div className="selecao-qtdderrotas-2" style={{"fontSize": this.props.font}}>
+                        { this.props.derrotas }
+                    </div>
+                    <div className="selecao-golspro-4" style={{"fontSize": this.props.font}}>
+                        { this.props.golsPro }
+                    </div>
+                    <div className="selecao-golscontra-2" style={{"fontSize": this.props.font}}>
+                        { this.props.golsContra }
+                    </div>
+                    <div className="selecao-saldogols-7" style={{"fontSize": this.props.font}}>
+                        { this.props.saldo }
+                    </div>
+                    <div className="selecao-rendimento-8" style={{"fontSize": this.props.font}}>
+                        { this.props.porcentagem }
+                    </div>
+                </div>
             </div>
         </div>
         <div className="selecao-1">
             <div className="selecao-line_2" /> 
         </div>
+        <div className="selecao-2" /> 
     </div>;
 };
 
