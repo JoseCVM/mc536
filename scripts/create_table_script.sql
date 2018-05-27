@@ -186,7 +186,7 @@ CREATE TABLE conhece
     id_pessoa int,
     codigo_idioma varchar(5),
     PRIMARY KEY (id_pessoa,codigo_idioma),
-    FOREIGN KEY (id_pessoa) REFERENCES pessoa(id_pessoa),
+    FOREIGN KEY (id_pessoa) REFERENCES tradutor(id_pessoa),
     FOREIGN KEY (codigo_idioma) REFERENCES idioma(codigo_idioma)
 );
 CREATE TABLE reporta_sobre
