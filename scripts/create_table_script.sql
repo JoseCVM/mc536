@@ -202,7 +202,7 @@ CREATE TABLE apita
     id_partida int,
     id_pessoa int,
     PRIMARY KEY (id_partida,id_pessoa),
-    FOREIGN KEY (id_pessoa) REFERENCES pessoa(id_pessoa),
+    FOREIGN KEY (id_pessoa) REFERENCES juiz(id_pessoa),
     FOREIGN KEY (id_partida) REFERENCES partida(id_partida)
 );
 /*
