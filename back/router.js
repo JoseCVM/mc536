@@ -11,6 +11,7 @@ var defineRoutes = function (app) {
 	app.get('/grupos', grupos.get);
 	app.get('/partidas', partida.get);
 	app.get('/partidas/selecao/:codigoSelecao', partida.getPartidasPorSelecao);
+	app.get('/partidas/:idPartida', partida.getPartidaPorId);
 	app.get('/jogadores/selecao/:codigoSelecao', jogador.getJogadoresPorSelecao);
 }
 

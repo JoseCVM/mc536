@@ -10,6 +10,16 @@ var getPartidasPorSelecao = function (req, res) {
   });
 }
 
+var getPartidaPorId = function (req, res) {
+  var idPartida = parseInt(req.params.idPartida);
+  var promise = partidaDAO.getPartidaPorId(idPartida);
+  promise.then(function(partida) {
+    res.json(partida);
+  }).catch(function(error) {
+    res.status(500).send(error.message);
+  });
+}
+
 var getPartidas = function (req, res) {
   var promise = partidaDAO.getPartidas();
   promise.then(function(partidas) {
@@ -21,5 +31,6 @@ var getPartidas = function (req, res) {
 
 module.exports = {
   get: getPartidas,
-  getPartidasPorSelecao: getPartidasPorSelecao
+  getPartidasPorSelecao: getPartidasPorSelecao,
+  getPartidaPorId: getPartidaPorId
 }
