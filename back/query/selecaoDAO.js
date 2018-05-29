@@ -39,6 +39,14 @@ left join lance l on j.id_pessoa = l.id_pessoa and ( \
 group by s.codigo_pais \
 order by cartoes desc"
 
+var querySelecoesOrderByFaltas =
+"select s.nome_pais as nome, s.bandeira, COUNT(l.id_pessoa) as numeroFaltas from \
+selecao s \
+left join jogador j on j.codigo_pais_joga = s.codigo_pais \
+left join lance l on j.id_pessoa = l.id_pessoa and l.tipo_lance='FALTA' \
+group by s.codigo_pais \
+order by numeroFaltas "
+
 var getSelecoesOrderByGolsDesc = function() {
   return db.query(querySelecoesOrderByGolsDesc);
 }
@@ -51,8 +59,20 @@ var getSelecoesMaisCartoes = function() {
   return db.query(querySelecoesMaisCartoes);
 }
 
+var getSelecoesMaisFaltas = function() {
+  query = querySelecoesOrderByFaltas + "desc";
+  return db.query(query);
+}
+
+var getSelecoesMenosFaltas = function() {
+  query = querySelecoesOrderByFaltas + "asc";
+  return db.query(query);
+}
+
 module.exports = {
   getSelecoesOrderByGolsDesc: getSelecoesOrderByGolsDesc,
   getSelecoesOrderByGolsSofridosAsc: getSelecoesOrderByGolsSofridosAsc,
-  getSelecoesMaisCartoes: getSelecoesMaisCartoes
+  getSelecoesMaisCartoes: getSelecoesMaisCartoes,
+  getSelecoesMaisFaltas: getSelecoesMaisFaltas,
+  getSelecoesMenosFaltas: getSelecoesMenosFaltas
 }

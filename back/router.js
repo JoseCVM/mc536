@@ -19,6 +19,8 @@ var defineRoutes = function (app) {
 	app.get('/selecao/melhorAtaque', selecao.getSelecaoMelhorAtaque);
 	app.get('/selecao/melhorDefesa', selecao.getSelecaoMelhorDefesa);
 	app.get('/selecao/maisCartoes', selecao.getSelecaoMaisCartoes);
+	app.get('/selecao/maisFaltas', selecao.getSelecaoMaisFaltas);
+	app.get('/selecao/menosFaltas', selecao.getSelecaoMenosFaltas);
 }
 
 module.exports = {
