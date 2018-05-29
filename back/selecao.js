@@ -45,10 +45,20 @@ var getSelecaoMaisFaltas = function (req, res) {
   });
 }
 
+var getSelecaoMaiorGoleada = function (req, res) {
+  var promise = selecaoDAO.getSelecoesMaioresGoleadas();
+  promise.then(function(selecoes) {
+    res.json(selecoes[0]);
+  }).catch(function(error) {
+    res.status(500).send(error.message);
+  });
+}
+
 module.exports = {
   getSelecaoMelhorAtaque: getSelecaoMelhorAtaque,
   getSelecaoMelhorDefesa: getSelecaoMelhorDefesa,
   getSelecaoMaisCartoes: getSelecaoMaisCartoes,
   getSelecaoMenosFaltas: getSelecaoMenosFaltas,
-  getSelecaoMaisFaltas: getSelecaoMaisFaltas
+  getSelecaoMaisFaltas: getSelecaoMaisFaltas,
+  getSelecaoMaiorGoleada: getSelecaoMaiorGoleada
 }
