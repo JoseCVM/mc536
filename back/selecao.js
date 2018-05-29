@@ -1,6 +1,6 @@
 var selecaoDAO = require('./query/selecaoDAO')
 
-var getSelecaoMaiorGoleada = function (req, res) {
+var getSelecaoMelhorAtaque = function (req, res) {
   var promise = selecaoDAO.getSelecoesOrderByGolsDesc();
   promise.then(function(selecoes) {
     res.json(selecoes[0]);
@@ -19,6 +19,6 @@ var getSelecaoMelhorDefesa = function (req, res) {
 }
 
 module.exports = {
-  getSelecaoMaiorGoleada: getSelecaoMaiorGoleada,
+  getSelecaoMelhorAtaque: getSelecaoMelhorAtaque,
   getSelecaoMelhorDefesa: getSelecaoMelhorDefesa
 }
