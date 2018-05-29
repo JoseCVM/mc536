@@ -33,12 +33,13 @@ function render() {
                     </div>
                     <div className="card_jogador-icone-9" style={{"backgroundImage": ("url('"+(this.props.card.icone)+"')")}} /> 
                 </div>
-                <div className="card_jogador-0-0-2">
+                <div className="card_jogador-0-0-2" /> 
+                <div className="card_jogador-0-0-3">
                     <div className="card_jogador-rectangle_4-1">
-                        <div className="card_jogador-0-0-2-0-0">
+                        <div className="card_jogador-0-0-3-0-0">
                             <img src={this.props.card.bandeira} className="card_jogador-bandeira-0" /> 
-                            <div className="card_jogador-0-0-2-0-0-1">
-                                <div className="card_jogador-0-0-2-0-0-1-0">
+                            <div className="card_jogador-0-0-3-0-0-1">
+                                <div className="card_jogador-0-0-3-0-0-1-0">
                                     <div className="card_jogador-nomepais-3">
                                         { this.props.card.nomePais }
                                     </div>

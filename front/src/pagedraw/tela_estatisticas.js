@@ -15,32 +15,35 @@ function render() {
         </div>
         <div className="tela_estatisticas-1">
             <div className="tela_estatisticas-card_jogador_instance-4">
-                <Card_jogador card={{"tipoCard": "Artilheiro", "icone": "https://ucarecdn.com/ad831a94-cfc8-4001-bf76-1d9c0a9912fc/", "nomeJogador": "Neymar Junior", "numero": "37", "bandeira": "http://www.infoescola.com/wp-content/uploads/2011/02/bandeira-do-brasil.gif", "nomePais": "Brasil"}} /> 
+                <Card_jogador card={{"tipoCard": "Artilheiro", "icone": "https://ucarecdn.com/ad831a94-cfc8-4001-bf76-1d9c0a9912fc/", "nomeJogador": this.props.artilheiro.nome, "numero": this.props.artilheiro.numero, "bandeira": this.props.artilheiro.bandeira, "nomePais": this.props.artilheiro.nomeSelecao}} /> 
             </div>
             <div className="tela_estatisticas-card_jogador_instance_2">
-                <Card_jogador card={{"tipoCard": "Mais Faltoso", "icone": "https://cdn.icon-icons.com/icons2/924/PNG/512/Football_2-12_icon-icons.com_72111.png", "nomeJogador": "Ronaldo", "numero": "54", "bandeira": "http://www.infoescola.com/wp-content/uploads/2011/02/bandeira-do-brasil.gif", "nomePais": "Brasil"}} /> 
+                <Card_jogador card={{"tipoCard": "Mais Faltoso", "icone": "https://cdn.icon-icons.com/icons2/924/PNG/512/Football_2-12_icon-icons.com_72111.png", "nomeJogador": this.props.maisFaltoso.nome, "numero": this.props.maisFaltoso.numero, "bandeira": this.props.maisFaltoso.bandeira, "nomePais": this.props.maisFaltoso.nomeSelecao}} /> 
             </div>
             <div className="tela_estatisticas-card_jogador_instance_2-9">
-                <Card_jogador card={{"tipoCard": "Melhor Goleiro", "icone": "https://image.freepik.com/icones-gratis/futebol-goleiro-pegar-a-bola_318-43505.jpg", "nomeJogador": "Ronaldo", "numero": "54", "bandeira": "http://www.infoescola.com/wp-content/uploads/2011/02/bandeira-do-brasil.gif", "nomePais": "Brasil"}} /> 
+                <Card_jogador card={{"tipoCard": "Melhor Goleiro", "icone": "https://image.freepik.com/icones-gratis/futebol-goleiro-pegar-a-bola_318-43505.jpg", "nomeJogador": this.props.melhorGoleiro.nome, "numero": this.props.melhorGoleiro.numero, "bandeira": this.props.melhorGoleiro.bandeira, "nomePais": this.props.melhorGoleiro.nomeSelecao}} /> 
             </div>
         </div>
         <div className="tela_estatisticas-2">
             <div className="tela_estatisticas-card_selecao_instance-1">
-                <Card_selecao cardSelecao={{"tipoCard": "Melhor Defesa", "bandeira": "http://www.infoescola.com/wp-content/uploads/2011/02/bandeira-do-brasil.gif", "nomePais": "Brasil", "numero": "10", "tipoNumero": "gols sofridos"}} /> 
+                <Card_selecao cardSelecao={{"tipoCard": "Melhor Defesa", "bandeira": this.props.melhorDefesa.bandeira, "nomePais": this.props.melhorDefesa.nome, "numero": this.props.melhorDefesa.golsSofridos, "tipoNumero": "gols sofridos"}} /> 
             </div>
             <div className="tela_estatisticas-card_selecao_instance-3">
-                <Card_selecao cardSelecao={{"tipoCard": "Melhor Ataque", "bandeira": "http://www.infoescola.com/wp-content/uploads/2011/02/bandeira-do-brasil.gif", "nomePais": "Brasil", "numero": "10", "tipoNumero": "gols feitos"}} /> 
+                <Card_selecao cardSelecao={{"tipoCard": "Melhor Ataque", "bandeira": this.props.melhorAtaque.bandeira, "nomePais": this.props.melhorAtaque.nome, "numero": this.props.melhorAtaque.golsFeitos, "tipoNumero": "gols feitos"}} /> 
             </div>
             <div className="tela_estatisticas-card_selecao_instance-16">
-                <Card_selecao cardSelecao={{"tipoCard": "Mais Cartões", "bandeira": "http://www.infoescola.com/wp-content/uploads/2011/02/bandeira-do-brasil.gif", "nomePais": "Brasil", "numero": "10", "tipoNumero": "cartões"}} /> 
+                <Card_selecao cardSelecao={{"tipoCard": "Mais Cartões", "bandeira": this.props.maisCartoes.bandeira, "nomePais": this.props.maisCartoes.nome, "numero": this.props.maisCartoes.cartoes, "tipoNumero": "cartões"}} /> 
             </div>
         </div>
         <div className="tela_estatisticas-3">
             <div className="tela_estatisticas-card_selecao_instance-36">
-                <Card_selecao cardSelecao={{"tipoCard": "Menos faltas", "bandeira": "http://www.infoescola.com/wp-content/uploads/2011/02/bandeira-do-brasil.gif", "nomePais": "Brasil", "numero": "10", "tipoNumero": "faltas"}} /> 
+                <Card_selecao cardSelecao={{"tipoCard": "Menos faltas", "bandeira": this.props.menosFaltas.bandeira, "nomePais": this.props.menosFaltas.nome, "numero": this.props.menosFaltas.numeroFaltas, "tipoNumero": "faltas"}} /> 
             </div>
             <div className="tela_estatisticas-card_selecao_instance-5">
-                <Card_selecao cardSelecao={{"tipoCard": "Mais Faltas", "bandeira": "http://www.infoescola.com/wp-content/uploads/2011/02/bandeira-do-brasil.gif", "nomePais": "Brasil", "numero": "10", "tipoNumero": "faltas"}} /> 
+                <Card_selecao cardSelecao={{"tipoCard": "Mais Faltas", "bandeira": this.props.maisFaltas.bandeira, "nomePais": this.props.maisFaltas.nome, "numero": this.props.maisFaltas.numeroFaltas, "tipoNumero": "faltas"}} /> 
+            </div>
+            <div className="tela_estatisticas-card_selecao_instance_2">
+                <Card_selecao cardSelecao={{"tipoCard": "Maior Goleada", "bandeira": this.props.maiorGoleada.bandeira, "nomePais": this.props.maiorGoleada.nome, "numero": this.props.maiorGoleada.golsFeitos, "tipoNumero": "Gols"}} /> 
             </div>
         </div>
         <div className="tela_estatisticas-4" /> 

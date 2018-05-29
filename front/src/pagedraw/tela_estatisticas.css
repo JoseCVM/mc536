@@ -29,6 +29,7 @@
     flex-shrink: 0;
     display: flex;
     flex-direction: column;
+    min-height: 201px;
 }
 
 .tela_estatisticas-card_jogador_instance_2 {
@@ -36,6 +37,7 @@
     margin-left: 89px;
     display: flex;
     flex-direction: column;
+    min-height: 201px;
 }
 
 .tela_estatisticas-card_jogador_instance_2-9 {
@@ -43,6 +45,7 @@
     margin-left: 71px;
     display: flex;
     flex-direction: column;
+    min-height: 201px;
 }
 
 .tela_estatisticas-2 {
@@ -76,18 +79,27 @@
     display: flex;
     margin-top: 48px;
     padding-left: 145px;
-    padding-right: 614px;
+    padding-right: 284px;
 }
 
 .tela_estatisticas-card_selecao_instance-36 {
-    flex-shrink: 0;
     display: flex;
     flex-direction: column;
+    padding-bottom: 1px;
+    flex-shrink: 0;
 }
 
 .tela_estatisticas-card_selecao_instance-5 {
-    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
     margin-left: 89px;
+    padding-bottom: 1px;
+    flex-shrink: 0;
+}
+
+.tela_estatisticas-card_selecao_instance_2 {
+    flex-shrink: 0;
+    margin-left: 71px;
     display: flex;
     flex-direction: column;
 }

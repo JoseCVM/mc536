@@ -13,7 +13,7 @@ import TelaSelecao from './pagedraw/tela_selecao'
 import TelaEstatisticas from './pagedraw/tela_estatisticas'
 // There's no special libraries or javascript layout systems, just code written for you.
 
-const apiUrl = 'http://5f551ce3.ngrok.io';
+const apiUrl = 'http://localhost:8081';
 
 
 class App extends Component {
@@ -115,7 +115,10 @@ class AppEstatiscas extends Component {
 
   render() {
     return (
-      <TelaEstatisticas logo={this.state.logo} />
+      <TelaEstatisticas logo={this.state.logo} artilheiro={this.state.artilheiro} 
+      melhorDefesa={this.state.melhorDefesa} maiorGoleada={this.state.maiorGoleada} maisFaltas={this.state.maisFaltas}
+      maisFaltoso={this.state.maisFaltoso} melhorGoleiro={this.state.melhorGoleiro} melhorAtaque={this.state.melhorAtaque}
+      maisCartoes={this.state.maisCartoes} menosFaltas={this.state.menosFaltas}/>
     );
   }
 
@@ -123,10 +126,58 @@ class AppEstatiscas extends Component {
   super();
     this.state = {
       logo: "/images/logo.png",
+      artilheiro: {},
+      melhorDefesa: {},
+      maiorGoleada: {},
+      maisFaltoso: {},
+      melhorGoleiro: {nome: "", numero: "", bandeira: "", nomeSelecao: ""},
+      melhorAtaque: {},
+      maisCartoes: {},
+      menosFaltas: {},
+      maisFaltas: {},
     };
   }
 
   componentDidMount() {
+
+      fetch(apiUrl + "/jogadores/DEFESA")
+        .then(response => response.json())
+        .then(response => this.setState({ melhorGoleiro: response }));
+
+      fetch(apiUrl + "/jogadores/GOL")
+        .then(response => response.json())
+        .then(response => this.setState({ artilheiro: response }));
+
+      fetch(apiUrl + "/jogadores/FALTA")
+        .then(response => response.json())
+        .then(response => this.setState({ maisFaltoso: response }));
+
+
+      fetch(apiUrl + "/selecao/melhorDefesa")
+        .then(response => response.json())
+        .then(response => this.setState({ melhorDefesa: response }));
+
+
+      fetch(apiUrl + "/selecao/maiorGoleada")
+        .then(response => response.json())
+        .then(response => this.setState({ maiorGoleada: response }));
+
+      fetch(apiUrl + "/selecao/maisCartoes")
+        .then(response => response.json())
+        .then(response => this.setState({ maisCartoes: response }));
+
+      fetch(apiUrl + "/selecao/menosFaltas")
+        .then(response => response.json())
+        .then(response => this.setState({ menosFaltas: response }));
+
+      fetch(apiUrl + "/selecao/maisFaltas")
+        .then(response => response.json())
+        .then(response => this.setState({ maisFaltas: response }));
+
+      fetch(apiUrl + "/selecao/melhorAtaque")
+        .then(response => response.json())
+        .then(response => this.setState({ melhorAtaque: response }));
+
   }
 }
 
