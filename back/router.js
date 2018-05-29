@@ -3,6 +3,7 @@ var lance = require('./lance')
 var partida = require('./partida')
 var grupos = require('./grupos')
 var jogador = require('./jogador')
+var selecao = require('./selecao')
 
 // Define os endpoints, chamando as funções declaradas nos controllers
 var defineRoutes = function (app) {
@@ -15,6 +16,7 @@ var defineRoutes = function (app) {
 	app.get('/jogadores/selecao/:codigoSelecao', jogador.getJogadoresPorSelecao);
 	app.get('/jogadores/:tipoLance(FALTA|DEFESA|GOL)',
 		jogador.getJogadorComMaisTipoLance);
+	app.get('/selecao/maiorGoleada', selecao.getSelecaoComMaisGols);
 }
 
 module.exports = {
