@@ -13,6 +13,8 @@ var defineRoutes = function (app) {
 	app.get('/partidas/selecao/:codigoSelecao', partida.getPartidasPorSelecao);
 	app.get('/partidas/:idPartida', partida.getPartidaPorId);
 	app.get('/jogadores/selecao/:codigoSelecao', jogador.getJogadoresPorSelecao);
+	app.get('/jogadores/:tipoLance(FALTA|DEFESA|GOL)',
+		jogador.getJogadorComMaisTipoLance);
 }
 
 module.exports = {

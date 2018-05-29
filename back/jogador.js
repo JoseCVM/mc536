@@ -10,6 +10,17 @@ var getJogadoresPorSelecao = function (req, res) {
   });
 }
 
+var getJogadorComMaisTipoLance = function (req, res) {
+  var tipoLance = req.params.tipoLance;
+  var promise = jogadorDAO.getJogadoresOrderDescTipoLance(tipoLance);
+  promise.then(function(jogadores) {
+    res.json(jogadores[0]);
+  }).catch(function(error) {
+    res.status(500).send(error.message);
+  });
+}
+
 module.exports = {
-  getJogadoresPorSelecao: getJogadoresPorSelecao
+  getJogadoresPorSelecao: getJogadoresPorSelecao,
+  getJogadorComMaisTipoLance: getJogadorComMaisTipoLance
 }
