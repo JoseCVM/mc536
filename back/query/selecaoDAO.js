@@ -30,6 +30,15 @@ on t1.id_partida = t2.id_partida and not t1.codigo_pais = t2.codigo_pais \
 group by t1.nome_pais, t1.bandeira \
 order by golsSofridos"
 
+var querySelecoesMaisCartoes =
+"select s.nome_pais as nome, s.bandeira, COUNT(l.id_pessoa) as cartoes from \
+selecao s \
+left join jogador j on j.codigo_pais_joga = s.codigo_pais \
+left join lance l on j.id_pessoa = l.id_pessoa and ( \
+  l.tipo_lance='CARTAO VERMELHO' or l.tipo_lance='CARTAO AMARELO') \
+group by s.codigo_pais \
+order by cartoes desc"
+
 var getSelecoesOrderByGolsDesc = function() {
   return db.query(querySelecoesOrderByGolsDesc);
 }
@@ -38,7 +47,12 @@ var getSelecoesOrderByGolsSofridosAsc = function() {
   return db.query(querySelecoesOrderByGolsSofridosAsc);
 }
 
+var getSelecoesMaisCartoes = function() {
+  return db.query(querySelecoesMaisCartoes);
+}
+
 module.exports = {
   getSelecoesOrderByGolsDesc: getSelecoesOrderByGolsDesc,
-  getSelecoesOrderByGolsSofridosAsc: getSelecoesOrderByGolsSofridosAsc
+  getSelecoesOrderByGolsSofridosAsc: getSelecoesOrderByGolsSofridosAsc,
+  getSelecoesMaisCartoes: getSelecoesMaisCartoes
 }

@@ -18,6 +18,7 @@ var defineRoutes = function (app) {
 		jogador.getJogadorComMaisTipoLance);
 	app.get('/selecao/melhorAtaque', selecao.getSelecaoMelhorAtaque);
 	app.get('/selecao/melhorDefesa', selecao.getSelecaoMelhorDefesa);
+	app.get('/selecao/maisCartoes', selecao.getSelecaoMaisCartoes);
 }
 
 module.exports = {
