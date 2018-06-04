@@ -599,7 +599,6 @@ INSERT INTO pessoa (id_pessoa, tipo_documento,documento,nome,data_nascimento,nom
 INSERT INTO pessoa (id_pessoa, tipo_documento,documento,nome,data_nascimento,nome_pais_origem) VALUES (575,'RHU','001763','Yuya Kubo','19750521','Japão');
 INSERT INTO pessoa (id_pessoa, tipo_documento,documento,nome,data_nascimento,nome_pais_origem) VALUES (576,'RHU','002668','Yuya Osako','19861015','Japão');
 
-start 
 INSERT INTO jogador (id_pessoa,codigo_pais_joga,nome_conhecido,posicao,clube_origem,numero_camisa) VALUES (1,'RUS','Igor Akinfeev','Legia','Volante',1);
 INSERT INTO jogador (id_pessoa,codigo_pais_joga,nome_conhecido,posicao,clube_origem,numero_camisa) VALUES (2,'RUS','Igor Smolnikov','Dynamo','Zagueiro',2 );
 INSERT INTO jogador (id_pessoa,codigo_pais_joga,nome_conhecido,posicao,clube_origem,numero_camisa) VALUES (3,'RUS','Viktor Vasin','Moscow','Atacante',3 );
@@ -1209,7 +1208,7 @@ INSERT INTO selecao (codigo_pais, nome_pais, descricao, grupo, entidade) VALUES 
 INSERT INTO selecao (codigo_pais, nome_pais, descricao, grupo, entidade) VALUES ('SEN','Senegal','Seleção Senegalense: um grupo de jogadores que defende a bandeira Senegalense na Copa.',8,'CSEF');
 INSERT INTO selecao (codigo_pais, nome_pais, descricao, grupo, entidade) VALUES ('COL','Colômbia','Seleção Colombiana: um grupo de jogadores que defende a bandeira Colombiana na Copa.',8,'CCOF');
 INSERT INTO selecao (codigo_pais, nome_pais, descricao, grupo, entidade) VALUES ('JPN','Japão','Seleção Japonesa: um grupo de jogadores que defende a bandeira Japonesa na Copa.',8,'CJPF');
-START 
+
 INSERT INTO pessoa (id_pessoa, tipo_documento,documento,nome,data_nascimento,nome_pais_origem) VALUES ('577','PASS','000625038','Bernas','19860226','Thailand');
 INSERT INTO pessoa (id_pessoa, tipo_documento,documento,nome,data_nascimento,nome_pais_origem) VALUES ('578','PASS','000119797','Christiana','19870204','Algeria');
 INSERT INTO pessoa (id_pessoa, tipo_documento,documento,nome,data_nascimento,nome_pais_origem) VALUES ('579','PASS','000477874','Crutchley','19880113','Vietnam');
@@ -1441,7 +1440,6 @@ INSERT INTO juiz (id_pessoa,posicao) VALUES ('689','Bandeirinha');
 INSERT INTO juiz (id_pessoa,posicao) VALUES ('690','Quarto Juiz');
 INSERT INTO juiz (id_pessoa,posicao) VALUES ('691','Juiz de video');
 
-START 
 INSERT INTO pessoa (id_pessoa, tipo_documento,documento,nome,data_nascimento,nome_pais_origem) VALUES ('692','PASS','000858514','Clavelle','19770718','Iraq');
 INSERT INTO pessoa (id_pessoa, tipo_documento,documento,nome,data_nascimento,nome_pais_origem) VALUES ('693','PASS','000808436','Bertovich','19860213','Albania');
 INSERT INTO pessoa (id_pessoa, tipo_documento,documento,nome,data_nascimento,nome_pais_origem) VALUES ('694','PASS','000395553','Glidden','19780707','Brazil');
@@ -1507,7 +1505,6 @@ INSERT INTO tecnico (id_pessoa,codigo_pais_treina,nome_conhecido) VALUES ('721',
 INSERT INTO tecnico (id_pessoa,codigo_pais_treina,nome_conhecido) VALUES ('722','COL','Deja');
 INSERT INTO tecnico (id_pessoa,codigo_pais_treina,nome_conhecido) VALUES ('723','JPN','Fils');
 
-START 
 INSERT INTO pessoa (id_pessoa, tipo_documento,documento,nome,data_nascimento,nome_pais_origem) VALUES ('1684','PASS','000249852','Finucan','19830714','Armenia');
 INSERT INTO pessoa (id_pessoa, tipo_documento,documento,nome,data_nascimento,nome_pais_origem) VALUES ('1685','PASS','000100719','Glausier','19800206','Barbados');
 INSERT INTO pessoa (id_pessoa, tipo_documento,documento,nome,data_nascimento,nome_pais_origem) VALUES ('1686','PASS','000179727','Bonita','19810703','Germany');
@@ -1923,7 +1920,6 @@ INSERT INTO conhece (id_pessoa,codigo_idioma) VALUES ('1779','ARM');
 INSERT INTO conhece (id_pessoa,codigo_idioma) VALUES ('1779','ALB');
 INSERT INTO conhece (id_pessoa,codigo_idioma) VALUES ('1779','ENG');
 
-START 
 INSERT INTO pessoa (id_pessoa, tipo_documento,documento,nome,data_nascimento,nome_pais_origem) VALUES ('1780','PASS','000705048','Bonge','19770421','Bahamas');
 INSERT INTO pessoa (id_pessoa, tipo_documento,documento,nome,data_nascimento,nome_pais_origem) VALUES ('1781','PASS','000960232','Ebey','19891005','Australia');
 INSERT INTO pessoa (id_pessoa, tipo_documento,documento,nome,data_nascimento,nome_pais_origem) VALUES ('1782','PASS','000575371','Channey','19830810','Armenia');
@@ -2117,7 +2113,6 @@ INSERT INTO guia (id_pessoa,codigo_pais_guiado) VALUES ('1873','SEN');
 INSERT INTO guia (id_pessoa,codigo_pais_guiado) VALUES ('1874','COL');
 INSERT INTO guia (id_pessoa,codigo_pais_guiado) VALUES ('1875','JPN');
 
-START 
 INSERT INTO equipe_de_midia (id_midia,nome_empresa) VALUES ('1','AWYUUQE');
 INSERT INTO pessoa (id_pessoa, tipo_documento,documento,nome,data_nascimento,nome_pais_origem) VALUES ('1876','PASS','000146545','Gibson','19890422','Nicaragua');
 INSERT INTO emprega_midia (id_midia, id_pessoa) VALUES ('1','1876');
@@ -8985,7 +8980,7 @@ INSERT INTO pessoa (id_pessoa, tipo_documento,documento,nome,data_nascimento,nom
 INSERT INTO emprega_gravacao (id_gravacao, id_pessoa) VALUES ('100','5207');
 INSERT INTO pessoa (id_pessoa, tipo_documento,documento,nome,data_nascimento,nome_pais_origem) VALUES ('5208','PASS','000654980','Dewinne','19830114','Morocco');
 INSERT INTO emprega_gravacao (id_gravacao, id_pessoa) VALUES ('100','5208');
-start 
+
 INSERT INTO partida (id_partida, data, horario, fase, numero_grupo, id_estadio) VALUES (1, '20180614', '12:00:00', 'GRUPOS', 1, 1);
 INSERT INTO partida (id_partida, data, horario, fase, numero_grupo, id_estadio) VALUES (2, '20180615', '09:00:00', 'GRUPOS', 1, 2);
 INSERT INTO partida (id_partida, data, horario, fase, numero_grupo, id_estadio) VALUES (3, '20180615', '12:00:00', 'GRUPOS', 2, 3);
