@@ -1,3 +1,4 @@
+start transaction;
 INSERT INTO partida (id_partida, data, horario, fase, numero_grupo, id_estadio) VALUES (1, '20180614', '12:00:00', 'GRUPOS', 1, 1);
 INSERT INTO partida (id_partida, data, horario, fase, numero_grupo, id_estadio) VALUES (2, '20180615', '09:00:00', 'GRUPOS', 1, 2);
 INSERT INTO partida (id_partida, data, horario, fase, numero_grupo, id_estadio) VALUES (3, '20180615', '12:00:00', 'GRUPOS', 2, 3);
@@ -62,3 +63,4 @@ INSERT INTO partida (id_partida, data, horario, fase, id_estadio) VALUES (61, '2
 INSERT INTO partida (id_partida, data, horario, fase, id_estadio) VALUES (62, '20180711', '15:00:00', 'ELIMINACAO', 1);
 INSERT INTO partida (id_partida, data, horario, fase, id_estadio) VALUES (63, '20180714', '11:00:00', 'ELIMINACAO', 3);
 INSERT INTO partida (id_partida, data, horario, fase, id_estadio) VALUES (64, '20180715', '12:00:00', 'ELIMINACAO', 1);
+commit;

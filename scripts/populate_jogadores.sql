@@ -1,3 +1,4 @@
+start transaction;
 INSERT INTO jogador (id_pessoa,codigo_pais_joga,nome_conhecido,posicao,clube_origem,numero_camisa) VALUES (1,'RUS','Igor Akinfeev','Legia','Volante',1);
 INSERT INTO jogador (id_pessoa,codigo_pais_joga,nome_conhecido,posicao,clube_origem,numero_camisa) VALUES (2,'RUS','Igor Smolnikov','Dynamo','Zagueiro',2 );
 INSERT INTO jogador (id_pessoa,codigo_pais_joga,nome_conhecido,posicao,clube_origem,numero_camisa) VALUES (3,'RUS','Viktor Vasin','Moscow','Atacante',3 );
@@ -574,3 +575,4 @@ INSERT INTO jogador (id_pessoa,codigo_pais_joga,nome_conhecido,posicao,clube_ori
 INSERT INTO jogador (id_pessoa,codigo_pais_joga,nome_conhecido,posicao,clube_origem,numero_camisa) VALUES (574,'JPN','Shinji Okazaki','Chelsea','Volante',16);
 INSERT INTO jogador (id_pessoa,codigo_pais_joga,nome_conhecido,posicao,clube_origem,numero_camisa) VALUES (575,'JPN','Yuya Kubo','Ludogorets','Zagueiro',17 );
 INSERT INTO jogador (id_pessoa,codigo_pais_joga,nome_conhecido,posicao,clube_origem,numero_camisa) VALUES (576,'JPN','Yuya Osako','Warsaw','Zagueiro',18);
+commit;

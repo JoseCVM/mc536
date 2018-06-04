@@ -1,3 +1,4 @@
+start transaction;
 INSERT INTO pessoa (id_pessoa, tipo_documento,documento,nome,data_nascimento,nome_pais_origem) VALUES (1,'RHU','022296','Igor Akinfeev','19870621','Rússia');
 INSERT INTO pessoa (id_pessoa, tipo_documento,documento,nome,data_nascimento,nome_pais_origem) VALUES (2,'RHU','008932','Igor Smolnikov','19841121','Rússia');
 INSERT INTO pessoa (id_pessoa, tipo_documento,documento,nome,data_nascimento,nome_pais_origem) VALUES (3,'RHU','024229','Viktor Vasin','19890217','Rússia');
@@ -574,3 +575,4 @@ INSERT INTO pessoa (id_pessoa, tipo_documento,documento,nome,data_nascimento,nom
 INSERT INTO pessoa (id_pessoa, tipo_documento,documento,nome,data_nascimento,nome_pais_origem) VALUES (574,'RHU','032270','Shinji Okazaki','19770722','Japão');
 INSERT INTO pessoa (id_pessoa, tipo_documento,documento,nome,data_nascimento,nome_pais_origem) VALUES (575,'RHU','001763','Yuya Kubo','19750521','Japão');
 INSERT INTO pessoa (id_pessoa, tipo_documento,documento,nome,data_nascimento,nome_pais_origem) VALUES (576,'RHU','002668','Yuya Osako','19861015','Japão');
+commit;
