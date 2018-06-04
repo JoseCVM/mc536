@@ -223,7 +223,6 @@ CREATE TABLE participacao
 (
     id_partida int,
     codigo_pais varchar(5),
-    gols_feitos int,
     PRIMARY KEY (id_partida,codigo_pais),
     FOREIGN KEY (id_partida) REFERENCES partida(id_partida),
     FOREIGN KEY (codigo_pais) REFERENCES selecao(codigo_pais)
