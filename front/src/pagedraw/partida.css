@@ -4,6 +4,7 @@
     flex-direction: column;
     flex-grow: 1;
     padding-top: 19px;
+    padding-bottom: 10px;
     background: #FFFFFF;
 }
 
@@ -150,6 +151,7 @@
     flex-grow: 1;
     flex-basis: 0px;
     min-height: fit-content;
+    cursor: pointer;
 }
 
 .partida-0-1-0-0-0 {
@@ -338,8 +340,50 @@
 }
 
 .partida-1 {
+    width: 0px;
+    flex-grow: 0.4;
+    flex-basis: 0px;
+}
+
+.partida-2 {
     display: flex;
-    margin-top: 16px;
+}
+
+.partida-2-0 {
+    height: 0px;
+    flex-grow: 0.009166666666666667;
+    flex-basis: 0px;
+}
+
+.partida-text_8 {
+    flex-grow: 0.08333333333333333;
+    flex-basis: 0px;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    color: #000000;
+    font-size: 0px;
+    line-height: 0px;
+    letter-spacing: 0px;
+    font-weight: normal;
+    font-style: normal;
+    text-decoration: none;
+    text-align: left;
+    word-wrap: break-word;
+}
+
+.partida-2-2 {
+    height: 0px;
+    flex-grow: 0.9075;
+    flex-basis: 0px;
+}
+
+.partida-3 {
+    width: 0px;
+    flex-grow: 0.6;
+    flex-basis: 0px;
+}
+
+.partida-4 {
+    display: flex;
 }
 
 .partida-line-7 {
@@ -347,12 +391,6 @@
     flex-grow: 1;
     flex-basis: 0px;
     background: #D8D8D8;
-}
-
-.partida-2 {
-    width: 0px;
-    flex-grow: 1;
-    flex-basis: 0px;
 }
 
 * {

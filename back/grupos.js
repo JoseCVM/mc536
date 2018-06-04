@@ -55,6 +55,7 @@ var get = function (req, res) {
   		console.log(dadosSelecoes[x]);
   		tabelaGrupos[dadosSelecoes[x].grupo - 1].numeroGrupo = String.fromCharCode(64 + dadosSelecoes[x].grupo);
   		tabelaGrupos[dadosSelecoes[x].grupo - 1].selecoes.push({
+  			codPais: x,
   			bandeira: '/images/bandeiras/' + x + '.gif',
       		nome: dadosSelecoes[x].nome,
       		pontos: 3 * dadosSelecoes[x].vitorias + dadosSelecoes[x].empates,

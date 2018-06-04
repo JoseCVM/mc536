@@ -34,7 +34,7 @@ function render() {
             </div>
             <div className="partida-0-1">
                 <div className="partida-0-1-0">
-                    <div className="partida-rectangle_6">
+                    <div onClick={() => { window.location = '/partida/' + this.props.idPartida; }} className="partida-rectangle_6">
                         <div className="partida-0-1-0-0-0">
                             <div className="partida-0-1-0-0-0-0" /> 
                             <div className="partida-0-1-0-0-0-1">
@@ -82,10 +82,18 @@ function render() {
                 </div>
             </div>
         </div>
-        <div className="partida-1">
+        <div className="partida-1" /> 
+        <div className="partida-2">
+            <div className="partida-2-0" /> 
+            <div className="partida-text_8">
+                { this.props.idPartida }
+            </div>
+            <div className="partida-2-2" /> 
+        </div>
+        <div className="partida-3" /> 
+        <div className="partida-4">
             <div className="partida-line-7" /> 
         </div>
-        <div className="partida-2" /> 
     </div>;
 };
 

@@ -19,7 +19,7 @@ function render() {
         </div>
         <div className="grupo-1">
             <div className="grupo-selecao_instance-6">
-                <Selecao nomeSelecao={""} pontos={"P"} jogos={"J"} vitorias={"V"} empates={"E"} derrotas={"D"} golsPro={"GP"} golsContra={"GC"} saldo={"SG"} porcentagem={"%"} font={14} img_src={""} /> 
+                <Selecao nomeSelecao={""} pontos={"P"} jogos={"J"} vitorias={"V"} empates={"E"} derrotas={"D"} golsPro={"GP"} golsContra={"GC"} saldo={"SG"} porcentagem={"%"} font={14} img_src={""} codPais={""} /> 
             </div>
         </div>
         <div className="grupo-2">
@@ -28,7 +28,7 @@ function render() {
                     return <div key={i} className="grupo-rectangle_3">
                         <div className="grupo-2-0-0-0-0">
                             <div className="grupo-primeiraselecao-2">
-                                <Selecao nomeSelecao={elem.nome} pontos={elem.pontos} jogos={elem.jogos} vitorias={elem.vitorias} empates={elem.empates} derrotas={elem.derrotas} golsPro={elem.golsPro} golsContra={elem.golsContra} saldo={elem.saldo} porcentagem={elem.porcentagem} font={22} img_src={elem.bandeira} /> 
+                                <Selecao nomeSelecao={elem.nome} pontos={elem.pontos} jogos={elem.jogos} vitorias={elem.vitorias} empates={elem.empates} derrotas={elem.derrotas} golsPro={elem.golsPro} golsContra={elem.golsContra} saldo={elem.saldo} porcentagem={elem.porcentagem} font={22} img_src={elem.bandeira} codPais={elem.codPais} /> 
                             </div>
                         </div>
                     </div>;

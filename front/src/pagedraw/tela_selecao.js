@@ -40,7 +40,7 @@ function render() {
                             return <div key={i} className="tela_selecao-rectangle_5">
                                 <div className="tela_selecao-2-0-1-0-0-0-0">
                                     <div className="tela_selecao-partida_instance-0">
-                                        <Partida bandeiraSelecao1={(elem.bandeiraSelecao1)} golsSelecao1={(elem.golsSelecao1)} golsSelecao2={(elem.golsSelecao2)} bandeiraSelecao2={(elem.bandeiraSelecao2)} nomeSelecao2={(elem.nomeSelecao2)} dataPartida={elem.dataPartida} horaPartida={elem.horaPartida} numeroGrupo={elem.numeroGrupo} estadio={elem.estadio} cidadaPartida={elem.cidadePartida} nomeSelecao1={(elem.nomeSelecao1)} /> 
+                                        <Partida bandeiraSelecao1={(elem.bandeiraSelecao1)} golsSelecao1={(elem.golsSelecao1)} golsSelecao2={(elem.golsSelecao2)} bandeiraSelecao2={(elem.bandeiraSelecao2)} nomeSelecao2={(elem.nomeSelecao2)} dataPartida={elem.dataPartida} horaPartida={elem.horaPartida} numeroGrupo={elem.numeroGrupo} estadio={elem.estadio} cidadaPartida={elem.cidadePartida} nomeSelecao1={(elem.nomeSelecao1)} idPartida={elem.idPartida} /> 
                                     </div>
                                 </div>
                             </div>;
