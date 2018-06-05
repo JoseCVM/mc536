@@ -134,7 +134,7 @@ namespace ConsoleApp1
                 if (defesa <= 7)
                 {
                     File.AppendAllText(scriptPath, string.Format("INSERT INTO lance (id_partida, id_pessoa, time_stamp, tipo_lance, descricao) VALUES({0}, {1}, '{2}', '{3}', '{4}');\n",
-   id, jog, tempo, "DEFESA", string.Format("Defesa de {0}!", nomePorId(goleiro1))));
+   id, goleiro1, tempo, "DEFESA", string.Format("Defesa de {0}!", nomePorId(goleiro1))));
                 }
                 else
                 {
@@ -145,7 +145,7 @@ namespace ConsoleApp1
                         while (assistidor == jog) assistidor = timeAtivo[random.Next(timeAtivo.Count())];
                         string nomAssis = nomePorId(assistidor);
                         File.AppendAllText(scriptPath, string.Format("INSERT INTO lance (id_partida, id_pessoa, time_stamp, tipo_lance, descricao) VALUES({0}, {1}, '{2}', '{3}', '{4}');\n",
-  id, jog, tempo, "ASSISTENCIA", string.Format("Assistencia de {0}!", nomAssis)));
+  id, assistidor, tempo, "ASSISTENCIA", string.Format("Assistencia de {0}!", nomAssis)));
                         File.AppendAllText(scriptPath, string.Format("INSERT INTO lance (id_partida, id_pessoa, time_stamp, tipo_lance, descricao) VALUES({0}, {1}, '{2}', '{3}', '{4}');\n",
 id, jog, tempo, "GOL", string.Format("Gol de {0}!", nomJog)));
                     }
@@ -239,7 +239,7 @@ id, jog, tempo, "GOL", string.Format("Gol de {0}!", nomJog)));
                 carregaSelecao(id_selecao1, ref jogadores1, ref jogadores1Banco);
                 carregaSelecao(id_selecao2, ref jogadores2, ref jogadores2Banco);
                 getGoleiros(ref goleiro1, ref goleiro1Banco,id_selecao1);
-                getGoleiros(ref goleiro2, ref goleiro2Banco, id_selecao1);
+                getGoleiros(ref goleiro2, ref goleiro2Banco, id_selecao2);
                 Console.WriteLine("Partida: "+ id.ToString() +" : " + id_selecao1.ToString() + " VS " + id_selecao2.ToString());
 
                 File.AppendAllText(scriptPath, string.Format("INSERT INTO lance (id_partida, id_pessoa, time_stamp, tipo_lance, descricao) VALUES({0}, {1}, '{2}', '{3}', '{4}');\n",
